@@ -25,11 +25,11 @@ experience:
     featured: true
 
 funding:
-  - title: "Example Research Fellowship"
-    organization: "Funding Organization"
-    amount: "Optional amount"
+  - title: "Doctoral Student Research Fellowship (박사과정생연구장려금지원사업)"
+    organization: "National Research Foundation of Korea (NRF)"
+    amount: ""
     period: "20XX - 20XX"
-    details: "Competitive fellowship supporting dissertation or postdoctoral research."
+    details: "Awarded by the National Research Foundation of Korea to support doctoral research on [your research topic]."
     featured: true
   - title: "Example Travel Grant"
     organization: "Academic Society"
