@@ -1,0 +1,29 @@
+---
+layout: default
+title: Honors & Awards
+permalink: /awards/
+description: "Academic honors, awards, and recognitions."
+---
+<section class="page-hero">
+  <div class="container narrow">
+    <p class="eyebrow">Recognition</p>
+    <h1>Honors & Awards</h1>
+    <p>Academic recognitions, paper awards, presentation awards, and institutional honors.</p>
+    <p class="example-notice"><strong>Template notice:</strong> Replace these examples with verified awards before publishing.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container narrow">
+    <div class="detail-list">
+      {% for item in site.data.cv.awards %}
+        <article class="detail-card">
+          <p class="eyebrow">{{ item.year }}</p>
+          <h2>{{ item.title }}</h2>
+          <p class="meta-line">{{ item.organization }}</p>
+          {% if item.details != "" %}<p>{{ item.details }}</p>{% endif %}
+        </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>

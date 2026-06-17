@@ -10,7 +10,7 @@ body_class: cv-page
     <div>
       <p class="eyebrow">Curriculum vitae</p>
       <h1>{{ site.author.name }}</h1>
-      <p>{{ site.author.role }} · {{ site.author.affiliation }}</p>
+      <p>{{ site.author.role }} - {{ site.author.affiliation }}</p>
     </div>
     <div class="cv-actions">
       {% if site.author.cv_pdf != "" %}
@@ -28,7 +28,7 @@ body_class: cv-page
     <h2>Education</h2>
     {% for item in site.data.cv.education %}
       <article class="cv-item">
-        <div><h3>{{ item.degree }}</h3><p>{{ item.institution }}{% if item.location != "" %} · {{ item.location }}{% endif %}</p>{% if item.details != "" %}<p>{{ item.details }}</p>{% endif %}</div>
+        <div><h3>{{ item.degree }}</h3><p>{{ item.institution }}{% if item.location != "" %} - {{ item.location }}{% endif %}</p>{% if item.details != "" %}<p>{{ item.details }}</p>{% endif %}</div>
         <p class="cv-period">{{ item.period }}</p>
       </article>
     {% endfor %}
@@ -38,7 +38,17 @@ body_class: cv-page
     <h2>Research experience</h2>
     {% for item in site.data.cv.experience %}
       <article class="cv-item">
-        <div><h3>{{ item.role }}</h3><p>{{ item.institution }}{% if item.location != "" %} · {{ item.location }}{% endif %}</p>{% if item.details != "" %}<p>{{ item.details }}</p>{% endif %}</div>
+        <div><h3>{{ item.role }}</h3><p>{{ item.institution }}{% if item.location != "" %} - {{ item.location }}{% endif %}</p>{% if item.details != "" %}<p>{{ item.details }}</p>{% endif %}</div>
+        <p class="cv-period">{{ item.period }}</p>
+      </article>
+    {% endfor %}
+  </section>
+
+  <section class="cv-section">
+    <h2>Grants and funding</h2>
+    {% for item in site.data.cv.funding %}
+      <article class="cv-item">
+        <div><h3>{{ item.title }}</h3><p>{{ item.organization }}{% if item.amount != "" %} - {{ item.amount }}{% endif %}</p>{% if item.details != "" %}<p>{{ item.details }}</p>{% endif %}</div>
         <p class="cv-period">{{ item.period }}</p>
       </article>
     {% endfor %}
@@ -47,21 +57,21 @@ body_class: cv-page
   <section class="cv-section">
     <h2>Awards and fellowships</h2>
     {% for item in site.data.cv.awards %}
-      <article class="cv-item compact"><div><h3>{{ item.title }}</h3><p>{{ item.organization }}</p></div><p class="cv-period">{{ item.year }}</p></article>
+      <article class="cv-item compact"><div><h3>{{ item.title }}</h3><p>{{ item.organization }}</p>{% if item.details != "" %}<p>{{ item.details }}</p>{% endif %}</div><p class="cv-period">{{ item.year }}</p></article>
     {% endfor %}
   </section>
 
   <section class="cv-section">
     <h2>Selected presentations</h2>
     {% for item in site.data.cv.presentations %}
-      <article class="cv-item compact"><div><h3>{{ item.title }}</h3><p>{{ item.event }}{% if item.location != "" %} · {{ item.location }}{% endif %}</p></div><p class="cv-period">{{ item.year }}</p></article>
+      <article class="cv-item compact"><div><h3>{{ item.title }}</h3><p>{{ item.event }}{% if item.location != "" %} - {{ item.location }}{% endif %}</p></div><p class="cv-period">{{ item.year }}</p></article>
     {% endfor %}
   </section>
 
   <section class="cv-section">
     <h2>Teaching</h2>
     {% for item in site.data.cv.teaching %}
-      <article class="cv-item compact"><div><h3>{{ item.role }}</h3><p>{{ item.course }} · {{ item.institution }}</p></div><p class="cv-period">{{ item.period }}</p></article>
+      <article class="cv-item compact"><div><h3>{{ item.role }}</h3><p>{{ item.course }} - {{ item.institution }}</p></div><p class="cv-period">{{ item.period }}</p></article>
     {% endfor %}
   </section>
 
@@ -71,5 +81,30 @@ body_class: cv-page
       <article class="cv-item compact"><div><h3>{{ item.role }}</h3><p>{{ item.organization }}</p></div><p class="cv-period">{{ item.period }}</p></article>
     {% endfor %}
   </section>
-</div>
 
+  <section class="cv-section">
+    <h2>Technical skills</h2>
+    <div class="skill-list">
+      {% for group in site.data.cv.skills %}
+        <article class="skill-group">
+          <h3>{{ group.category }}</h3>
+          <p>{{ group.items | join: ", " }}</p>
+        </article>
+      {% endfor %}
+    </div>
+  </section>
+
+  <section class="cv-section">
+    <h2>Software, data, and protocols</h2>
+    {% for item in site.data.cv.software %}
+      <article class="cv-item compact"><div><h3>{{ item.title }}</h3><p>{{ item.description }}</p>{% if item.url != "" %}<p><a href="{{ item.url }}">Repository or resource</a></p>{% endif %}</div></article>
+    {% endfor %}
+  </section>
+
+  <section class="cv-section">
+    <h2>Professional memberships</h2>
+    {% for item in site.data.cv.memberships %}
+      <article class="cv-item compact"><div><h3>{{ item.organization }}</h3><p>{{ item.role }}</p></div><p class="cv-period">{{ item.period }}</p></article>
+    {% endfor %}
+  </section>
+</div>

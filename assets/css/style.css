@@ -156,6 +156,22 @@ p { margin-top: 0; }
 .tag-list { display: flex; flex-wrap: wrap; gap: 0.75rem; margin: 0; padding: 0; list-style: none; }
 .tag-list li { padding: 0.5rem 0.9rem; border: 1px solid #b8cdd3; border-radius: 999px; background: white; }
 
+.summary-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+.summary-card, .detail-card, .skill-group {
+  padding: 1.35rem;
+  border: 1px solid var(--line);
+  border-radius: 0.8rem;
+  background: white;
+  box-shadow: 0 10px 30px rgba(23, 33, 43, 0.05);
+}
+.summary-card h3 { margin-bottom: 0.65rem; }
+.summary-card p:not(.eyebrow), .detail-card p, .skill-group p { color: var(--muted); }
+.summary-card a { font-weight: 750; }
+
 .publication-list { border-top: 1px solid var(--line); }
 .publication {
   display: grid;
@@ -184,6 +200,13 @@ p { margin-top: 0; }
 }
 .year-group + .year-group { margin-top: 4rem; }
 .year-group > h2 { margin-bottom: 1rem; font-size: 1.6rem; }
+.detail-list { display: grid; gap: 1rem; }
+.detail-card h2 { font-size: 1.5rem; }
+.detail-card h2, .detail-card h3 { margin-bottom: 0.55rem; }
+.detail-card p:last-child { margin-bottom: 0; }
+.meta-line { font-weight: 650; }
+.experience-block + .experience-block { margin-top: 4rem; }
+.experience-block > h2 { margin-bottom: 1.2rem; font-size: 1.65rem; }
 
 .cv-actions { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 0.65rem; }
 .button {
@@ -211,6 +234,7 @@ p { margin-top: 0; }
 .cv-item p { margin: 0.2rem 0 0; color: var(--muted); }
 .cv-period { white-space: nowrap; font-weight: 650; }
 .cv-item.compact { padding-block: 1rem; }
+.skill-list { display: grid; gap: 1rem; grid-template-columns: repeat(2, minmax(0, 1fr)); margin-top: 1rem; }
 .prose { max-width: 740px; }
 .prose > p { margin-bottom: 1.5rem; font-size: 1.08rem; }
 .writing-note h2 { margin-bottom: 0.55rem; font-size: 1.15rem; }
@@ -249,6 +273,7 @@ p { margin-top: 0; }
   .hero-grid { grid-template-columns: 1fr; }
   .hero-image-wrap { width: min(72vw, 300px); }
   .heading-row { align-items: flex-start; flex-direction: column; gap: 1rem; }
+  .summary-grid, .skill-list { grid-template-columns: 1fr; }
   .publication { grid-template-columns: 1fr; gap: 0.25rem; }
   .publication-year { margin-bottom: 0; }
   .cv-actions { justify-content: flex-start; }
@@ -269,4 +294,3 @@ p { margin-top: 0; }
   .cv-item { break-inside: avoid; padding: 0.65rem 0; }
   a { color: black; text-decoration: none; }
 }
-

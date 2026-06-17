@@ -3,7 +3,7 @@ education:
     institution: "Your University"
     location: "City, Country"
     period: "20XX - 20XX"
-    details: "Dissertation: “Your Dissertation Title”"
+    details: "Dissertation: Your Dissertation Title"
   - degree: "B.S. or M.S. in Your Field"
     institution: "Your University"
     location: "City, Country"
@@ -11,16 +11,44 @@ education:
     details: ""
 
 experience:
-  - role: "Research Position"
+  - role: "Postdoctoral Researcher or Research Fellow"
     institution: "Your Institution"
     location: "City, Country"
     period: "20XX - Present"
-    details: "Briefly describe your role using only publicly available, completed work."
+    details: "Conducted publication-based research in your field, focusing on completed and publicly available studies."
+    featured: true
+  - role: "Graduate Researcher"
+    institution: "Your University"
+    location: "City, Country"
+    period: "20XX - 20XX"
+    details: "Designed experiments or analyses, prepared manuscripts, and collaborated on peer-reviewed publications."
+    featured: true
+
+funding:
+  - title: "Example Research Fellowship"
+    organization: "Funding Organization"
+    amount: "Optional amount"
+    period: "20XX - 20XX"
+    details: "Competitive fellowship supporting dissertation or postdoctoral research."
+    featured: true
+  - title: "Example Travel Grant"
+    organization: "Academic Society"
+    amount: ""
+    period: "20XX"
+    details: "Supported presentation of published research at an international conference."
+    featured: true
 
 awards:
-  - title: "Example Award or Fellowship"
+  - title: "Example Best Paper Award"
     organization: "Awarding Organization"
     year: "20XX"
+    details: "Recognized a peer-reviewed publication or conference presentation."
+    featured: true
+  - title: "Example Graduate Research Award"
+    organization: "Your University"
+    year: "20XX"
+    details: "Awarded for research excellence and publication record."
+    featured: true
 
 presentations:
   - title: "Example Invited Talk or Conference Presentation"
@@ -39,3 +67,24 @@ service:
     organization: "Journal, Society, or Event"
     period: "20XX - Present"
 
+skills:
+  - category: "Research methods"
+    items:
+      - "Method or instrument one"
+      - "Method or instrument two"
+      - "Data analysis workflow"
+  - category: "Computing"
+    items:
+      - "Python or R"
+      - "Data visualization"
+      - "Scientific writing tools"
+
+software:
+  - title: "Example Analysis Script or Dataset"
+    description: "A public repository, dataset, or protocol connected to published work."
+    url: ""
+
+memberships:
+  - organization: "Example Academic Society"
+    role: "Member"
+    period: "20XX - Present"

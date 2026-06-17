@@ -1,6 +1,6 @@
 # Academic Portfolio Website
 
-This repository is a publication-focused academic portfolio built for GitHub Pages with Jekyll. It is intentionally data-driven: update the YAML files and configuration rather than editing repeated publication markup.
+This repository is a publication-focused academic portfolio built for GitHub Pages with Jekyll. It is intentionally data-driven: update the YAML files and configuration rather than editing repeated publication or CV markup.
 
 > The included name, biography, CV, and publications are examples. Replace every placeholder before publishing.
 
@@ -39,12 +39,21 @@ Edit `_data/publications.yml`. Keep entries newest first and preserve this struc
 
 The name in `authors` must exactly match `author.name` in `_config.yml` for bold highlighting. Use empty strings for unavailable DOI, PDF, issue, or page values. Set `featured: true` for three to five papers shown on the home page.
 
-## 3. Update the CV and About page
+## 3. Update CV sections
 
-- Edit `_data/cv.yml` for education, completed research experience, awards, presentations, teaching, and service.
+- Edit `_data/cv.yml` for education, completed research experience, funding, awards, presentations, teaching, service, skills, software or data resources, and memberships.
 - Edit `about.html` and replace every bracketed prompt.
 - To offer a PDF CV, add the file under `assets/files/` and set `author.cv_pdf` in `_config.yml`, for example `/assets/files/your-name-cv.pdf`.
 - Do not publish a phone number, birth date, home address, confidential work, or ongoing project details.
+
+The public navigation is:
+
+- `Home`: summarized profile, featured publications, funding, awards, and experience.
+- `Publications`: full publication list.
+- `Funding`: grants, fellowships, scholarships, and travel grants.
+- `Honors & Awards`: awards and recognitions.
+- `Experience`: research experience, education, teaching, and service.
+- `CV`: printable full CV-style page.
 
 ## 4. Preview locally
 
@@ -71,7 +80,7 @@ git remote add origin https://github.com/<username>/<username>.github.io.git
 git push -u origin main
 ```
 
-3. In GitHub, open **Settings → Pages** and select **Deploy from a branch**, `main`, and `/ (root)`.
+3. In GitHub, open **Settings > Pages** and select **Deploy from a branch**, `main`, and `/ (root)`.
 4. Visit `https://<username>.github.io` after GitHub finishes the deployment.
 
 ## 6. Work from another computer
@@ -95,4 +104,3 @@ git push
 ```
 
 Always pull before editing when switching computers. Commit source files only; do not commit `_site`, caches, or installed dependencies.
-
