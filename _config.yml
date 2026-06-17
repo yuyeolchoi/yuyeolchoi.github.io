@@ -1,17 +1,17 @@
-title: "Your Name | Academic Portfolio"
+title: "Yuyeol Choi | Academic Portfolio"
 description: "Academic portfolio and publication record of Your Name."
-url: "https://yourusername.github.io"
+url: "https://yuyeolchoi.github.io"
 baseurl: ""
-lang: en
+lang: en, Kor
 timezone: Asia/Seoul
 
 author:
-  name: "Your Name"
-  initials: "YN"
+  name: "Yuyeol Choi"
+  initials: "Y. Choi"
   role: "Researcher in Your Field"
-  affiliation: "Your Institution"
-  location: "City, Country"
-  email: "your.email@example.com"
+  affiliation: "Chonnam National University"
+  location: "Gwangju, South Korea"
+  email: "yuyeol_chio@jnu.ac.kr"
   bio: >-
     I study [research topic] using [methods or approaches]. My published work
     has contributed to [established finding or research area].
@@ -19,10 +19,11 @@ author:
   cv_pdf: ""
 
 research_interests:
-  - "Research Area One"
-  - "Research Area Two"
-  - "Method or Technique"
-  - "Application Domain"
+  - "Heterogeneous catalysis for C1 chemistry"
+  - "Methane and CO2 activation"
+  - "Catalytic dehydrogenation for hydrogen production"
+  - "Zeolite and metal oxide catalysts"
+  - "Catalyst descriptors and metal-support interactions"
 
 social:
   orcid: ""
