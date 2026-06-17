@@ -38,4 +38,5 @@ exclude:
   - Gemfile.lock
   - README.md
   - LICENSE
-
+  - jekyll-server.log
+  - jekyll-server.err.log

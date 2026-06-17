@@ -3,4 +3,5 @@ _site/
 .sass-cache/
 .jekyll-metadata
 vendor/
-
+jekyll-server.log
+jekyll-server.err.log
