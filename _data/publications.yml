@@ -1,52 +1,263 @@
-# Replace these clearly marked examples with your published work.
-# Keep entries ordered newest first. Use an empty string when a link is unavailable.
-- title: "Example of a Published Research Article"
+# Publication data drafted from the public Google Scholar profile:
+# https://scholar.google.com/citations?user=gExFOsIAAAAJ
+# Keep entries ordered newest first. Use empty strings when DOI or PDF links are unavailable.
+- title: "Cinnamon sticks-derived N-doped activated carbons with tailored aperture environment for efficient adsorption and separation of C2H2/CO2 and C2H4/CO2"
   authors:
-    - "Your Name"
-    - "Collaborator One"
-    - "Collaborator Two"
-  venue: "Journal of Example Research"
-  year: 2025
-  volume: "12"
-  issue: "3"
-  pages: "101-115"
-  doi: "10.0000/example.2025.001"
-  paper_url: "https://doi.org/10.0000/example.2025.001"
-  pdf_url: ""
-  featured: true
-  contribution: "Established a reproducible framework for studying an example research question."
-
-- title: "A Deliberately Long Example Title Showing How Multi-line Publication Titles Remain Readable in the Layout"
-  authors:
-    - "Collaborator One"
-    - "Your Name"
-    - "Collaborator Two"
-    - "Collaborator Three"
-    - "Collaborator Four"
-    - "Collaborator Five"
-  venue: "International Journal of Demonstration Studies"
-  year: 2023
-  volume: "8"
+    - "Pillaiyar Puthiaraj"
+    - "Yuyeol Choi"
+    - "Jongmin Park"
+    - "Hanbit Jang"
+    - "Kyungsu Na"
+  venue: "Chemical Engineering Journal"
+  year: 2026
+  volume: ""
   issue: ""
-  pages: "44-61"
+  pages: "175338"
   doi: ""
-  paper_url: "https://example.com/published-paper"
+  paper_url: "https://www.sciencedirect.com/science/article/pii/S138589472602797X"
   pdf_url: ""
   featured: true
-  contribution: "Demonstrated how the selected method improves interpretation of published evidence."
+  contribution: "Reported biomass-derived N-doped activated carbons for selective gas adsorption and separation."
 
-- title: "Example Methods Paper"
+- title: "Direct synthesis of 2,5-furandicarboxylic acid from biomass-derived fructose using multifunctional PdRu nanoparticles supported mesoporous organic polymers functionalized with sulfonic acid"
   authors:
-    - "Your Name"
-    - "Collaborator One"
-  venue: "Methods and Protocols"
-  year: 2021
-  volume: "5"
-  issue: "1"
-  pages: "1-14"
-  doi: "10.0000/example.2021.003"
-  paper_url: "https://doi.org/10.0000/example.2021.003"
+    - "Pillaiyar Puthiaraj"
+    - "Jongmin Park"
+    - "Yuyeol Choi"
+    - "Woosung Leem"
+    - "Kyungsu Na"
+  venue: "Chemical Engineering Journal"
+  year: 2025
+  volume: ""
+  issue: ""
+  pages: "167222"
+  doi: ""
+  paper_url: "https://www.sciencedirect.com/science/article/pii/S1385894725080611"
   pdf_url: ""
   featured: true
-  contribution: "Developed an accessible protocol for a commonly used research workflow."
+  contribution: "Developed a multifunctional catalytic route for biomass-derived FDCA synthesis."
 
+- title: "Catalytic dehydrogenation for hydrogen production controlled by metal-supported heterogeneous catalysts"
+  authors:
+    - "Yuyeol Choi"
+    - "Xinkai Wu"
+    - "Ji-Woong Lee"
+    - "Kyungsu Na"
+  venue: "Catalysis Science & Technology"
+  year: 2024
+  volume: "14"
+  issue: "20"
+  pages: "5784-5810"
+  doi: ""
+  paper_url: "https://pubs.rsc.org/en/content/articlehtml/2024/cy/d4cy00875h"
+  pdf_url: ""
+  featured: true
+  contribution: "Reviewed catalyst design principles for dehydrogenation-based hydrogen production."
+
+- title: "Unveiling the sequential CO2/CH4 activation process on Co3O4 nanoparticles encapsulated by mesoporous silica shell"
+  authors:
+    - "Hyogeun Yang"
+    - "Seungdon Kwon"
+    - "Yuyeol Choi"
+    - "Hanbit Jang"
+    - "Woosung Leem"
+    - "Jun Hyeok Heo"
+    - "Changgi Kim"
+    - "Taekyong Song"
+    - "Kyungsu Na"
+  venue: "Applied Catalysis B: Environment and Energy"
+  year: 2024
+  volume: "357"
+  issue: ""
+  pages: "124304"
+  doi: ""
+  paper_url: "https://www.sciencedirect.com/science/article/pii/S0926337324006180"
+  pdf_url: ""
+  featured: false
+  contribution: "Investigated sequential CO2/CH4 activation on encapsulated cobalt oxide nanoparticles."
+
+- title: "Enabling direct seawater electrolysis by redox-inactive amphiphilic amines via chloride sequestration"
+  authors:
+    - "Marco Milia"
+    - "Yuyeol Choi"
+    - "Rodrigo Lima"
+    - "Kyungsu Na"
+    - "Ji-Woong Lee"
+  venue: "Chemical Engineering Journal"
+  year: 2024
+  volume: "496"
+  issue: ""
+  pages: "153763"
+  doi: ""
+  paper_url: "https://www.sciencedirect.com/science/article/pii/S1385894724052525"
+  pdf_url: ""
+  featured: true
+  contribution: "Demonstrated chloride sequestration strategies for direct seawater electrolysis."
+
+- title: "Methylbenzyl naphthalene: Liquid organic hydrogen carrier for facile hydrogen storage and release"
+  authors:
+    - "Purna Chandra Rao"
+    - "Yongseok Kim"
+    - "Hyeonsu Kim"
+    - "Younghu Son"
+    - "Yuyeol Choi"
+    - "Kyungsu Na"
+    - "Minyoung Yoon"
+  venue: "ACS Sustainable Chemistry & Engineering"
+  year: 2023
+  volume: "11"
+  issue: "34"
+  pages: "12656-12666"
+  doi: ""
+  paper_url: "https://pubs.acs.org/doi/abs/10.1021/acssuschemeng.3c02689"
+  pdf_url: ""
+  featured: false
+  contribution: "Studied methylbenzyl naphthalene as a liquid organic hydrogen carrier."
+
+- title: "A sustainable carbon-consuming cycle based on sequential activation of CO2 and CH4 using metal oxides"
+  authors:
+    - "Seungdon Kwon"
+    - "Hyogeun Yang"
+    - "Youngjae Yu"
+    - "Yuyeol Choi"
+    - "Nagyeong Kim"
+    - "Gye Hong Kim"
+    - "Kyoung Chul Ko"
+    - "Kyungsu Na"
+  venue: "Applied Catalysis B: Environmental"
+  year: 2023
+  volume: "339"
+  issue: ""
+  pages: "123120"
+  doi: ""
+  paper_url: "https://www.sciencedirect.com/science/article/pii/S0926337323007634"
+  pdf_url: ""
+  featured: false
+  contribution: "Explored metal oxide-assisted sequential activation of CO2 and CH4."
+
+- title: "Controlled electropositive catalytic sites on zeolites for achieving high CH3Cl selectivity via electrophilic CH4 chlorination using Cl2"
+  authors:
+    - "Yuyeol Choi"
+    - "Sunghyun Park"
+    - "Seungdon Kwon"
+    - "Kyoung Chul Ko"
+    - "Kyungsu Na"
+  venue: "Journal of Materials Chemistry A"
+  year: 2022
+  volume: "10"
+  issue: "46"
+  pages: "24475-24486"
+  doi: ""
+  paper_url: "https://pubs.rsc.org/en/content/articlehtml/2022/ta/d2ta06787k"
+  pdf_url: ""
+  featured: true
+  contribution: "Identified catalytic descriptors for selective electrophilic methane chlorination on zeolites."
+
+- title: "Catalytic Descriptors for Selective Methane Chlorination through Electrophilic Pathway"
+  authors:
+    - "Yuyeol Choi"
+    - "Kyungsu Na"
+  venue: "2022 AIChE Annual Meeting"
+  year: 2022
+  volume: ""
+  issue: ""
+  pages: ""
+  doi: ""
+  paper_url: "https://aiche.confex.com/aiche/2022/meetingapp.cgi/Paper/643842"
+  pdf_url: ""
+  featured: false
+  contribution: "Presented catalytic descriptors for selective methane chlorination."
+
+- title: "Controlled Metal-Support Interactions in Au/CeO2-Mg(OH)2 Catalysts Activating the Direct Oxidative Esterification of Methacrolein with Methanol to Methyl Methacrylate"
+  authors:
+    - "Nagyeong Kim"
+    - "Seulgi Lim"
+    - "Seungdon Kwon"
+    - "Yuyeol Choi"
+    - "Ji-Woong Lee"
+    - "Kyungsu Na"
+  venue: "Nanomaterials"
+  year: 2021
+  volume: "11"
+  issue: "11"
+  pages: "3146"
+  doi: ""
+  paper_url: "https://www.mdpi.com/2079-4991/11/11/3146"
+  pdf_url: ""
+  featured: false
+  contribution: "Examined metal-support interactions in Au/CeO2-Mg(OH)2 esterification catalysts."
+
+- title: "Catalytic Effects of Zeolite Socony Mobil-5 (ZSM-5) on the Oxidation of Acoustically Levitated exo-Tetrahydrodicyclopentadiene (JP-10) Droplets"
+  authors:
+    - "Sahan D. Perera"
+    - "Stephen J. Brotton"
+    - "Haylie Shinsato"
+    - "Ralf I. Kaiser"
+    - "Yuyeol Choi"
+    - "Kyungsu Na"
+  venue: "The Journal of Physical Chemistry A"
+  year: 2021
+  volume: "125"
+  issue: "22"
+  pages: "4896-4909"
+  doi: ""
+  paper_url: "https://pubs.acs.org/doi/abs/10.1021/acs.jpca.1c02892"
+  pdf_url: ""
+  featured: false
+  contribution: "Studied ZSM-5 catalytic effects on JP-10 droplet oxidation."
+
+- title: "Catalytic consequences of supported Pd catalysts on dehydrogenative H2 evolution from 2-[(n-methylcyclohexyl)methyl]piperidine as the liquid organic hydrogen carrier"
+  authors:
+    - "Yongseok Kim"
+    - "Yohan Song"
+    - "Yuyeol Choi"
+    - "Kwanyong Jeong"
+    - "Ji Hoon Park"
+    - "Kyoung Chul Ko"
+    - "Kyungsu Na"
+  venue: "ACS Sustainable Chemistry & Engineering"
+  year: 2020
+  volume: "9"
+  issue: "2"
+  pages: "809-821"
+  doi: ""
+  paper_url: "https://pubs.acs.org/doi/abs/10.1021/acssuschemeng.0c07338"
+  pdf_url: ""
+  featured: false
+  contribution: "Evaluated supported Pd catalysts for LOHC dehydrogenation."
+
+- title: "CH4 chlorination with Cl2 using zeolites having different surface polarities: catalysis descriptors explaining the electrophilic pathway"
+  authors:
+    - "Seungdon Kwon"
+    - "Sunghyun Park"
+    - "Yuyeol Choi"
+    - "Kyoung Chul Ko"
+    - "Ho-Jeong Chae"
+    - "Kyungsu Na"
+  venue: "Journal of CO2 Utilization"
+  year: 2020
+  volume: "42"
+  issue: ""
+  pages: "101318"
+  doi: ""
+  paper_url: "https://www.sciencedirect.com/science/article/pii/S2212982020307174"
+  pdf_url: ""
+  featured: false
+  contribution: "Connected zeolite surface polarity with electrophilic methane chlorination descriptors."
+
+- title: "Selective and rapid capture of Sr2+ with LTA zeolites: Effect of crystal sizes and mesoporosity"
+  authors:
+    - "Seungdon Kwon"
+    - "Yuyeol Choi"
+    - "Bhupendra Kumar Singh"
+    - "Kyungsu Na"
+  venue: "Applied Surface Science"
+  year: 2020
+  volume: "506"
+  issue: ""
+  pages: "145029"
+  doi: ""
+  paper_url: "https://www.sciencedirect.com/science/article/pii/S0169433219338462"
+  pdf_url: ""
+  featured: false
+  contribution: "Investigated crystal-size and mesoporosity effects on Sr2+ capture by LTA zeolites."
