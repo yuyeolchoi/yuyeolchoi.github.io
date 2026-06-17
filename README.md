@@ -48,7 +48,7 @@ The name in `authors` must exactly match `author.name` in `_config.yml` for bold
 
 The public navigation is:
 
-- `Home`: summarized profile, featured publications, funding, awards, and experience.
+- `Home`: summarized profile, featured publication list, funding, awards, and experience.
 - `Publications`: full publication list.
 - `Funding`: grants, fellowships, scholarships, and travel grants.
 - `Honors & Awards`: awards and recognitions.
