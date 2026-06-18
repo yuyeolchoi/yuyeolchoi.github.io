@@ -53,12 +53,14 @@ body_class: cv-page
     {% endfor %}
   </section>
 
-  <section class="cv-section">
-    <h2>Awards and fellowships</h2>
-    {% for item in site.data.cv.awards %}
-      <article class="cv-item compact"><div><h3>{{ item.title }}</h3><p>{{ item.organization }}</p>{% if item.details != "" %}<p>{{ item.details }}</p>{% endif %}</div><p class="cv-period">{{ item.year }}</p></article>
-    {% endfor %}
-  </section>
+  {% if site.data.cv.awards.size > 0 %}
+    <section class="cv-section">
+      <h2>Awards and fellowships</h2>
+      {% for item in site.data.cv.awards %}
+        <article class="cv-item compact"><div><h3>{{ item.title }}</h3><p>{{ item.organization }}</p>{% if item.details != "" %}<p>{{ item.details }}</p>{% endif %}</div><p class="cv-period">{{ item.year }}</p></article>
+      {% endfor %}
+    </section>
+  {% endif %}
 
   <section class="cv-section">
     <h2>Education</h2>

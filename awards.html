@@ -15,15 +15,19 @@ description: "Academic honors, awards, and recognitions."
 
 <section class="section">
   <div class="container narrow">
-    <div class="detail-list">
-      {% for item in site.data.cv.awards %}
-        <article class="detail-card">
-          <p class="eyebrow">{{ item.year }}</p>
-          <h2>{{ item.title }}</h2>
-          <p class="meta-line">{{ item.organization }}</p>
-          {% if item.details != "" %}<p>{{ item.details }}</p>{% endif %}
-        </article>
-      {% endfor %}
-    </div>
+    {% if site.data.cv.awards.size > 0 %}
+      <div class="detail-list">
+        {% for item in site.data.cv.awards %}
+          <article class="detail-card">
+            <p class="eyebrow">{{ item.year }}</p>
+            <h2>{{ item.title }}</h2>
+            <p class="meta-line">{{ item.organization }}</p>
+            {% if item.details != "" %}<p>{{ item.details }}</p>{% endif %}
+          </article>
+        {% endfor %}
+      </div>
+    {% else %}
+      <p class="example-notice">Awards and honors will be added after the verified records are available.</p>
+    {% endif %}
   </div>
 </section>

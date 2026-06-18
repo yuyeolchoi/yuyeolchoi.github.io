@@ -62,27 +62,33 @@ description: "Academic profile, research interests, and selected publications."
   <div class="container narrow">
     <div class="section-heading">
       <p class="eyebrow">CV highlights</p>
-      <h2>Selected funding, awards, and experience</h2>
+      <h2>Selected funding and experience</h2>
     </div>
     <div class="summary-grid">
+      {% if featured_funding.size > 0 %}
       <article class="summary-card">
         <p class="eyebrow">Funding</p>
         <h3>{{ featured_funding[0].title }}</h3>
         <p>{{ featured_funding[0].organization }}{% if featured_funding[0].period != "" %} - {{ featured_funding[0].period }}{% endif %}</p>
         <a href="{{ '/funding/' | relative_url }}">View funding</a>
       </article>
+      {% endif %}
+      {% if featured_awards.size > 0 %}
       <article class="summary-card">
         <p class="eyebrow">Honors & Awards</p>
         <h3>{{ featured_awards[0].title }}</h3>
         <p>{{ featured_awards[0].organization }}{% if featured_awards[0].year != "" %} - {{ featured_awards[0].year }}{% endif %}</p>
         <a href="{{ '/awards/' | relative_url }}">View awards</a>
       </article>
+      {% endif %}
+      {% if featured_experience.size > 0 %}
       <article class="summary-card">
         <p class="eyebrow">Experience</p>
         <h3>{{ featured_experience[0].role }}</h3>
         <p>{{ featured_experience[0].institution }}{% if featured_experience[0].period != "" %} - {{ featured_experience[0].period }}{% endif %}</p>
         <a href="{{ '/experience/' | relative_url }}">View experience</a>
       </article>
+      {% endif %}
     </div>
   </div>
 </section>

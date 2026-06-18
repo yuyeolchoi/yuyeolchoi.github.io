@@ -11,23 +11,11 @@ education:
     details: ""
 
 experience:
-  - role: "Postdoctoral Researcher or Research Fellow"
-    institution: "Your Institution"
-    location: "City, Country"
-    period: "20XX - Present"
-    details: "Conducted publication-based research in your field, focusing on completed and publicly available studies."
-    featured: true
   - role: "Visiting Graduate Student"
     institution: "Georgia Institute of Technology"
     location: "Atlanta, GA, USA"
     period: "2022"
     details: "Conducted short-term research training at Georgia Tech, supported by Chonnam National University."
-    featured: true
-  - role: "Graduate Researcher"
-    institution: "Your University"
-    location: "City, Country"
-    period: "20XX - 20XX"
-    details: "Designed experiments or analyses, prepared manuscripts, and collaborated on peer-reviewed publications."
     featured: true
 
 funding:
@@ -50,17 +38,7 @@ funding:
     details: "Institutional fellowship supporting graduate students with strong research potential."
     featured: true
 
-awards:
-  - title: "Example Best Paper Award"
-    organization: "Awarding Organization"
-    year: "20XX"
-    details: "Recognized a peer-reviewed publication or conference presentation."
-    featured: true
-  - title: "Example Graduate Research Award"
-    organization: "Your University"
-    year: "20XX"
-    details: "Awarded for research excellence and publication record."
-    featured: true
+awards: []
 
 presentations:
   - title: "Example Invited Talk or Conference Presentation"
