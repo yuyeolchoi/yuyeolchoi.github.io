@@ -17,6 +17,12 @@ experience:
     period: "20XX - Present"
     details: "Conducted publication-based research in your field, focusing on completed and publicly available studies."
     featured: true
+  - role: "Visiting Graduate Student"
+    institution: "[Host University or Research Institute]"
+    location: "[City, Country]"
+    period: "2022"
+    details: "Conducted short-term research training supported by Chonnam National University."
+    featured: true
   - role: "Graduate Researcher"
     institution: "Your University"
     location: "City, Country"
@@ -31,11 +37,17 @@ funding:
     period: "20XX - 20XX"
     details: "Awarded by the National Research Foundation of Korea to support doctoral research on [your research topic]."
     featured: true
-  - title: "Example Travel Grant"
-    organization: "Academic Society"
+  - title: "Overseas Research Training Grant for Graduate Students"
+    organization: "Chonnam National University"
+    amount: ""
+    period: "2022"
+    details: "Supported an international research visit as a graduate student."
+    featured: true
+  - title: "Next-Generation Scholar Development Fellowship for Graduate Students"
+    organization: "Chonnam National University"
     amount: ""
     period: "20XX"
-    details: "Supported presentation of published research at an international conference."
+    details: "Institutional fellowship supporting graduate students with strong research potential."
     featured: true
 
 awards:
