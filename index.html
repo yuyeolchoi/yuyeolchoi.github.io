@@ -102,12 +102,14 @@ description: "Academic profile, research interests, and selected publications."
       </article>
       {% endif %}
       {% if featured_experience.size > 0 %}
-      <article class="summary-card">
-        <p class="eyebrow">Experience</p>
-        <h3>{{ featured_experience[0].role }}</h3>
-        <p>{{ featured_experience[0].institution }}{% if featured_experience[0].period != "" %} - {{ featured_experience[0].period }}{% endif %}</p>
-        <a href="{{ '/experience/' | relative_url }}">View experience</a>
-      </article>
+        {% for item in featured_experience %}
+          <article class="summary-card">
+            <p class="eyebrow">Experience</p>
+            <h3>{{ item.role }}</h3>
+            <p>{{ item.institution }}{% if item.period != "" %} - {{ item.period }}{% endif %}</p>
+            <a href="{{ '/experience/' | relative_url }}">View experience</a>
+          </article>
+        {% endfor %}
       {% endif %}
     </div>
   </div>
