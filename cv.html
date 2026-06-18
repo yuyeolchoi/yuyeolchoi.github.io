@@ -48,7 +48,7 @@ body_class: cv-page
     {% for item in site.data.cv.funding %}
       <article class="cv-item">
         <div><h3>{{ item.title }}</h3><p>{{ item.organization }}{% if item.amount != "" %} - {{ item.amount }}{% endif %}</p>{% if item.details != "" %}<p>{{ item.details }}</p>{% endif %}</div>
-        <p class="cv-period">{{ item.period }}</p>
+        {% if item.period != "" %}<p class="cv-period">{{ item.period }}</p>{% endif %}
       </article>
     {% endfor %}
   </section>

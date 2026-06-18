@@ -18,7 +18,7 @@ description: "Research funding, fellowships, and grants."
     <div class="detail-list">
       {% for item in site.data.cv.funding %}
         <article class="detail-card">
-          <p class="eyebrow">{{ item.period }}</p>
+          {% if item.period != "" %}<p class="eyebrow">{{ item.period }}</p>{% endif %}
           <h2>{{ item.title }}</h2>
           <p class="meta-line">{{ item.organization }}{% if item.amount != "" %} - {{ item.amount }}{% endif %}</p>
           {% if item.details != "" %}<p>{{ item.details }}</p>{% endif %}
