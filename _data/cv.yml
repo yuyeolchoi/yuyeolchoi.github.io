@@ -57,16 +57,30 @@ teaching:
 service: []
 
 skills:
-  - category: "Research methods"
+  - category: "Catalyst synthesis and materials design"
     items:
-      - "Method or instrument one"
-      - "Method or instrument two"
-      - "Data analysis workflow"
-  - category: "Computing"
+      - "Zeolites"
+      - "Metal oxides"
+      - "Supported metal catalysts"
+      - "Porous materials"
+  - category: "Catalytic reaction systems"
     items:
-      - "Python or R"
-      - "Data visualization"
-      - "Scientific writing tools"
+      - "C1 chemistry"
+      - "Methane chlorination"
+      - "Catalytic dehydrogenation"
+      - "Hydrogen carriers"
+  - category: "Computational catalysis"
+    items:
+      - "Density functional theory (DFT)"
+      - "ORCA"
+      - "Quantum ESPRESSO"
+      - "Catalyst descriptor analysis"
+  - category: "Mechanistic interpretation"
+    items:
+      - "Reaction mechanism analysis"
+      - "Adsorption and activation trends"
+      - "Metal-support interactions"
+      - "Structure-performance relationships"
 
 software:
   - title: "Example Analysis Script or Dataset"
