@@ -53,10 +53,10 @@ presentations:
     year: "20XX"
 
 teaching:
-  - role: "Teaching Assistant or Instructor"
-    course: "Course Name"
-    institution: "Your Institution"
-    period: "20XX"
+  - role: "Teaching Assistant"
+    course: "Chemistry courses"
+    institution: "Chonnam National University"
+    period: "2020 - 2021"
 
 service:
   - role: "Reviewer or Academic Service Role"
