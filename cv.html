@@ -72,12 +72,14 @@ body_class: cv-page
     {% endfor %}
   </section>
 
-  <section class="cv-section">
-    <h2>Selected presentations</h2>
-    {% for item in site.data.cv.presentations %}
-      <article class="cv-item compact"><div><h3>{{ item.title }}</h3><p>{{ item.event }}{% if item.location != "" %} - {{ item.location }}{% endif %}</p></div><p class="cv-period">{{ item.year }}</p></article>
-    {% endfor %}
-  </section>
+  {% if site.data.cv.presentations.size > 0 %}
+    <section class="cv-section">
+      <h2>Selected presentations</h2>
+      {% for item in site.data.cv.presentations %}
+        <article class="cv-item compact"><div><h3>{{ item.title }}</h3><p>{{ item.event }}{% if item.location != "" %} - {{ item.location }}{% endif %}</p></div><p class="cv-period">{{ item.year }}</p></article>
+      {% endfor %}
+    </section>
+  {% endif %}
 
   <section class="cv-section">
     <h2>Technical skills</h2>
@@ -105,17 +107,21 @@ body_class: cv-page
     {% endfor %}
   </section>
 
-  <section class="cv-section">
-    <h2>Academic service</h2>
-    {% for item in site.data.cv.service %}
-      <article class="cv-item compact"><div><h3>{{ item.role }}</h3><p>{{ item.organization }}</p></div><p class="cv-period">{{ item.period }}</p></article>
-    {% endfor %}
-  </section>
+  {% if site.data.cv.service.size > 0 %}
+    <section class="cv-section">
+      <h2>Academic service</h2>
+      {% for item in site.data.cv.service %}
+        <article class="cv-item compact"><div><h3>{{ item.role }}</h3><p>{{ item.organization }}</p></div><p class="cv-period">{{ item.period }}</p></article>
+      {% endfor %}
+    </section>
+  {% endif %}
 
-  <section class="cv-section">
-    <h2>Professional memberships</h2>
-    {% for item in site.data.cv.memberships %}
-      <article class="cv-item compact"><div><h3>{{ item.organization }}</h3><p>{{ item.role }}</p></div><p class="cv-period">{{ item.period }}</p></article>
-    {% endfor %}
-  </section>
+  {% if site.data.cv.memberships.size > 0 %}
+    <section class="cv-section">
+      <h2>Professional memberships</h2>
+      {% for item in site.data.cv.memberships %}
+        <article class="cv-item compact"><div><h3>{{ item.organization }}</h3><p>{{ item.role }}</p></div><p class="cv-period">{{ item.period }}</p></article>
+      {% endfor %}
+    </section>
+  {% endif %}
 </div>
