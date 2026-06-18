@@ -17,6 +17,12 @@ experience:
     period: "2022"
     details: "Conducted short-term research training at Georgia Tech, supported by Chonnam National University."
     featured: true
+  - role: "International Research Collaborator"
+    institution: "University of Copenhagen"
+    location: "Copenhagen, Denmark"
+    period: "2020"
+    details: "Conducted remote collaborative research due to COVID-19 travel restrictions. Related publication: Milia et al., Chemical Engineering Journal 496, 153763 (2024)."
+    featured: false
 
 funding:
   - title: "Doctoral Student Research Fellowship (박사과정생연구장려금지원사업)"
