@@ -28,8 +28,8 @@ funding:
   - title: "Doctoral Student Research Fellowship (박사과정생연구장려금지원사업)"
     organization: "National Research Foundation of Korea (NRF)"
     amount: ""
-    period: "20XX - 20XX"
-    details: "Awarded by the National Research Foundation of Korea to support doctoral research on [your research topic]."
+    period: ""
+    details: "Awarded by the National Research Foundation of Korea to support doctoral research."
     featured: true
   - title: "Overseas Research Training Grant for Graduate Students"
     organization: "Chonnam National University"
@@ -82,9 +82,6 @@ skills:
       - "Metal-support interactions"
       - "Structure-performance relationships"
 
-software:
-  - title: "Example Analysis Script or Dataset"
-    description: "A public repository, dataset, or protocol connected to published work."
-    url: ""
+software: []
 
 memberships: []

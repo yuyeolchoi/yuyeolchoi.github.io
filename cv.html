@@ -2,7 +2,7 @@
 layout: default
 title: CV
 permalink: /cv/
-description: "Curriculum vitae of Your Name."
+description: "Curriculum vitae of Yuyeol Choi."
 body_class: cv-page
 ---
 <section class="page-hero cv-header">
@@ -93,12 +93,14 @@ body_class: cv-page
     </div>
   </section>
 
-  <section class="cv-section">
-    <h2>Software, data, and protocols</h2>
-    {% for item in site.data.cv.software %}
-      <article class="cv-item compact"><div><h3>{{ item.title }}</h3><p>{{ item.description }}</p>{% if item.url != "" %}<p><a href="{{ item.url }}">Repository or resource</a></p>{% endif %}</div></article>
-    {% endfor %}
-  </section>
+  {% if site.data.cv.software.size > 0 %}
+    <section class="cv-section">
+      <h2>Software, data, and protocols</h2>
+      {% for item in site.data.cv.software %}
+        <article class="cv-item compact"><div><h3>{{ item.title }}</h3><p>{{ item.description }}</p>{% if item.url != "" %}<p><a href="{{ item.url }}">Repository or resource</a></p>{% endif %}</div></article>
+      {% endfor %}
+    </section>
+  {% endif %}
 
   <section class="cv-section">
     <h2>Teaching</h2>

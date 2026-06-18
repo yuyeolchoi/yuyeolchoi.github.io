@@ -1,14 +1,14 @@
 title: "Yuyeol Choi | Academic Portfolio"
-description: "Academic portfolio and publication record of Your Name."
+description: "Academic portfolio and publication record of Yuyeol Choi."
 url: "https://yuyeolchoi.github.io"
 baseurl: ""
-lang: en, Kor
+lang: en
 timezone: Asia/Seoul
 
 author:
   name: "Yuyeol Choi"
   initials: "Y. Choi"
-  role: "Researcher in Your Field"
+  role: "Ph.D. Candidate in Chemistry"
   affiliation: "Chonnam National University"
   location: "Gwangju, South Korea"
   email: "yuyeol_chio@jnu.ac.kr"
