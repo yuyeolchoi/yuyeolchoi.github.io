@@ -1,13 +1,13 @@
 education:
-  - degree: "Ph.D. in Your Field"
-    institution: "Your University"
-    location: "City, Country"
-    period: "20XX - 20XX"
-    details: "Dissertation: Your Dissertation Title"
-  - degree: "B.S. or M.S. in Your Field"
-    institution: "Your University"
-    location: "City, Country"
-    period: "20XX - 20XX"
+  - degree: "Ph.D. Course, Department of Chemistry"
+    institution: "Chonnam National University"
+    location: "Gwangju, South Korea"
+    period: "2020 - Present"
+    details: ""
+  - degree: "B.S., Department of Chemistry"
+    institution: "Chonnam National University"
+    location: "Gwangju, South Korea"
+    period: "2014 - 2020"
     details: ""
 
 experience:
