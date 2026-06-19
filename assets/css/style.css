@@ -209,6 +209,14 @@ p { margin-top: 0; }
   background: #fff8e7;
   color: #62430b;
 }
+.empty-state {
+  margin: 0;
+  padding: 1.2rem 1.35rem;
+  border: 1px solid var(--line);
+  border-radius: 0.8rem;
+  color: var(--muted);
+  background: white;
+}
 .year-group + .year-group { margin-top: 4rem; }
 .year-group > h2 { margin-bottom: 1rem; font-size: 1.6rem; }
 .detail-list { display: grid; gap: 1rem; }
