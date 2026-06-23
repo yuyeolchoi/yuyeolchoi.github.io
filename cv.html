@@ -24,8 +24,18 @@ body_class: cv-page
 </section>
 
 <div class="container narrow cv-content">
-  <section class="cv-section">
+  <nav class="cv-jump-nav" aria-label="CV sections">
+    <a href="#publications">Publications</a>
+    <a href="#research-experience">Research Experience</a>
+    <a href="#funding">Funding</a>
+    <a href="#education">Education</a>
+    <a href="#technical-skills">Technical Skills</a>
+    <a href="#teaching">Teaching</a>
+  </nav>
+
+  <section class="cv-section" id="publications">
     <h2>Publications</h2>
+    <p class="section-note">Concise publication record. Contribution notes and links are maintained on the <a href="{{ '/publications/' | relative_url }}">publications page</a>.</p>
     <div class="publication-list cv-publication-list">
       {% for publication in site.data.publications %}
         {% include publication.html item=publication show_contribution=false %}
@@ -33,7 +43,7 @@ body_class: cv-page
     </div>
   </section>
 
-  <section class="cv-section">
+  <section class="cv-section" id="research-experience">
     <h2>Research experience</h2>
     {% for item in site.data.cv.experience %}
       <article class="cv-item">
@@ -43,7 +53,7 @@ body_class: cv-page
     {% endfor %}
   </section>
 
-  <section class="cv-section">
+  <section class="cv-section" id="funding">
     <h2>Grants and funding</h2>
     {% for item in site.data.cv.funding %}
       <article class="cv-item">
@@ -54,7 +64,7 @@ body_class: cv-page
   </section>
 
   {% if site.data.cv.awards.size > 0 %}
-    <section class="cv-section">
+    <section class="cv-section" id="awards">
       <h2>Awards and fellowships</h2>
       {% for item in site.data.cv.awards %}
         <article class="cv-item compact"><div><h3>{{ item.title }}</h3><p>{{ item.organization }}</p>{% if item.details != "" %}<p>{{ item.details }}</p>{% endif %}</div><p class="cv-period">{{ item.year }}</p></article>
@@ -62,7 +72,7 @@ body_class: cv-page
     </section>
   {% endif %}
 
-  <section class="cv-section">
+  <section class="cv-section" id="education">
     <h2>Education</h2>
     {% for item in site.data.cv.education %}
       <article class="cv-item">
@@ -73,7 +83,7 @@ body_class: cv-page
   </section>
 
   {% if site.data.cv.presentations.size > 0 %}
-    <section class="cv-section">
+    <section class="cv-section" id="presentations">
       <h2>Selected presentations</h2>
       {% for item in site.data.cv.presentations %}
         <article class="cv-item compact"><div><h3>{{ item.title }}</h3><p>{{ item.event }}{% if item.location != "" %} - {{ item.location }}{% endif %}</p></div><p class="cv-period">{{ item.year }}</p></article>
@@ -81,7 +91,7 @@ body_class: cv-page
     </section>
   {% endif %}
 
-  <section class="cv-section">
+  <section class="cv-section" id="technical-skills">
     <h2>Technical skills</h2>
     <div class="skill-list">
       {% for group in site.data.cv.skills %}
@@ -94,7 +104,7 @@ body_class: cv-page
   </section>
 
   {% if site.data.cv.software.size > 0 %}
-    <section class="cv-section">
+    <section class="cv-section" id="software">
       <h2>Software, data, and protocols</h2>
       {% for item in site.data.cv.software %}
         <article class="cv-item compact"><div><h3>{{ item.title }}</h3><p>{{ item.description }}</p>{% if item.url != "" %}<p><a href="{{ item.url }}">Repository or resource</a></p>{% endif %}</div></article>
@@ -102,7 +112,7 @@ body_class: cv-page
     </section>
   {% endif %}
 
-  <section class="cv-section">
+  <section class="cv-section" id="teaching">
     <h2>Teaching</h2>
     {% for item in site.data.cv.teaching %}
       <article class="cv-item compact"><div><h3>{{ item.role }}</h3><p>{{ item.course }} - {{ item.institution }}</p></div><p class="cv-period">{{ item.period }}</p></article>
@@ -110,7 +120,7 @@ body_class: cv-page
   </section>
 
   {% if site.data.cv.service.size > 0 %}
-    <section class="cv-section">
+    <section class="cv-section" id="service">
       <h2>Academic service</h2>
       {% for item in site.data.cv.service %}
         <article class="cv-item compact"><div><h3>{{ item.role }}</h3><p>{{ item.organization }}</p></div><p class="cv-period">{{ item.period }}</p></article>
@@ -119,7 +129,7 @@ body_class: cv-page
   {% endif %}
 
   {% if site.data.cv.memberships.size > 0 %}
-    <section class="cv-section">
+    <section class="cv-section" id="memberships">
       <h2>Professional memberships</h2>
       {% for item in site.data.cv.memberships %}
         <article class="cv-item compact"><div><h3>{{ item.organization }}</h3><p>{{ item.role }}</p></div><p class="cv-period">{{ item.period }}</p></article>

@@ -2,11 +2,7 @@
   url: /
 - label: Publications
   url: /publications/
-- label: Funding
-  url: /funding/
-- label: Honors & Awards
-  url: /awards/
-- label: Experience
-  url: /experience/
 - label: CV
   url: /cv/
+- label: About
+  url: /about/

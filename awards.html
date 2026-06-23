@@ -8,25 +8,20 @@ description: "Academic honors, awards, and recognitions."
   <div class="container narrow">
     <p class="eyebrow">Recognition</p>
     <h1>Honors & Awards</h1>
-    <p>Academic recognitions, paper awards, presentation awards, and institutional honors.</p>
+    <p>This information is maintained in the full CV to avoid repeating the same record across pages.</p>
   </div>
 </section>
 
 <section class="section">
   <div class="container narrow">
-    {% if site.data.cv.awards.size > 0 %}
-      <div class="detail-list">
-        {% for item in site.data.cv.awards %}
-          <article class="detail-card">
-            <p class="eyebrow">{{ item.year }}</p>
-            <h2>{{ item.title }}</h2>
-            <p class="meta-line">{{ item.organization }}</p>
-            {% if item.details != "" %}<p>{{ item.details }}</p>{% endif %}
-          </article>
-        {% endfor %}
-      </div>
-    {% else %}
-      <p class="empty-state">Awards and honors will be added after verified records are available.</p>
-    {% endif %}
+    <article class="detail-card legacy-card">
+      <h2>See awards and fellowships in the full CV</h2>
+      <p>The CV is the canonical place for verified awards, fellowships, and academic recognitions.</p>
+      {% if site.data.cv.awards.size > 0 %}
+        <a class="button" href="{{ '/cv/#awards' | relative_url }}">Go to CV awards</a>
+      {% else %}
+        <a class="button" href="{{ '/cv/' | relative_url }}">Go to full CV</a>
+      {% endif %}
+    </article>
   </div>
 </section>

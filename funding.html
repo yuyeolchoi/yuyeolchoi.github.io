@@ -8,21 +8,16 @@ description: "Research funding, fellowships, and grants."
   <div class="container narrow">
     <p class="eyebrow">Research support</p>
     <h1>Funding</h1>
-    <p>Selected grants, fellowships, scholarships, and travel support connected to completed or publicly shareable research activity.</p>
+    <p>This information is maintained in the full CV to avoid repeating the same record across pages.</p>
   </div>
 </section>
 
 <section class="section">
   <div class="container narrow">
-    <div class="detail-list">
-      {% for item in site.data.cv.funding %}
-        <article class="detail-card">
-          {% if item.period != "" %}<p class="eyebrow">{{ item.period }}</p>{% endif %}
-          <h2>{{ item.title }}</h2>
-          <p class="meta-line">{{ item.organization }}{% if item.amount != "" %} - {{ item.amount }}{% endif %}</p>
-          {% if item.details != "" %}<p>{{ item.details }}</p>{% endif %}
-        </article>
-      {% endfor %}
-    </div>
+    <article class="detail-card legacy-card">
+      <h2>See grants and funding in the full CV</h2>
+      <p>The CV is the canonical place for funding, fellowships, scholarships, and travel support.</p>
+      <a class="button" href="{{ '/cv/#funding' | relative_url }}">Go to CV funding</a>
+    </article>
   </div>
 </section>

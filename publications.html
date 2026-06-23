@@ -20,7 +20,7 @@ description: "Peer-reviewed publications by Yuyeol Choi."
         <h2 id="year-{{ year.name }}">{{ year.name }}</h2>
         <div class="publication-list">
           {% for publication in year.items %}
-            {% include publication.html item=publication show_contribution=false %}
+            {% include publication.html item=publication show_contribution=true %}
           {% endfor %}
         </div>
       </section>
