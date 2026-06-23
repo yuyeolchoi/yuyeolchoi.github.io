@@ -113,9 +113,9 @@ p { margin-top: 0; }
 }
 .hero-grid {
   display: grid;
-  grid-template-columns: minmax(220px, 340px) 1fr;
+  grid-template-columns: minmax(180px, 280px) 1fr;
   align-items: center;
-  gap: clamp(2.5rem, 7vw, 6.5rem);
+  gap: clamp(2rem, 5vw, 4.5rem);
 }
 .hero-image-wrap { position: relative; }
 .hero-image-wrap::before {
@@ -315,7 +315,7 @@ p { margin-top: 0; }
   .site-nav a { padding: 0.75rem; }
   .site-identity small { display: none; }
   .hero-grid { grid-template-columns: 1fr; }
-  .hero-image-wrap { width: min(72vw, 300px); }
+  .hero-image-wrap { width: min(60vw, 240px); }
   .heading-row { align-items: flex-start; flex-direction: column; gap: 1rem; }
   .summary-grid, .skill-list, .expertise-grid { grid-template-columns: 1fr; }
   .publication { grid-template-columns: 1fr; gap: 0.25rem; }
