@@ -1,0 +1,52 @@
+# Replace these clearly marked examples with your published work.
+# Keep entries ordered newest first. Use an empty string when a link is unavailable.
+- title: "Example of a Published Research Article"
+  authors:
+    - "Your Name"
+    - "Collaborator One"
+    - "Collaborator Two"
+  venue: "Journal of Example Research"
+  year: 2025
+  volume: "12"
+  issue: "3"
+  pages: "101-115"
+  doi: "10.0000/example.2025.001"
+  paper_url: "https://doi.org/10.0000/example.2025.001"
+  pdf_url: ""
+  featured: true
+  contribution: "Established a reproducible framework for studying an example research question."
+
+- title: "A Deliberately Long Example Title Showing How Multi-line Publication Titles Remain Readable in the Layout"
+  authors:
+    - "Collaborator One"
+    - "Your Name"
+    - "Collaborator Two"
+    - "Collaborator Three"
+    - "Collaborator Four"
+    - "Collaborator Five"
+  venue: "International Journal of Demonstration Studies"
+  year: 2023
+  volume: "8"
+  issue: ""
+  pages: "44-61"
+  doi: ""
+  paper_url: "https://example.com/published-paper"
+  pdf_url: ""
+  featured: true
+  contribution: "Demonstrated how the selected method improves interpretation of published evidence."
+
+- title: "Example Methods Paper"
+  authors:
+    - "Your Name"
+    - "Collaborator One"
+  venue: "Methods and Protocols"
+  year: 2021
+  volume: "5"
+  issue: "1"
+  pages: "1-14"
+  doi: "10.0000/example.2021.003"
+  paper_url: "https://doi.org/10.0000/example.2021.003"
+  pdf_url: ""
+  featured: true
+  contribution: "Developed an accessible protocol for a commonly used research workflow."
+

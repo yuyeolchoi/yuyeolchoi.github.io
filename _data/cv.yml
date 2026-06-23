@@ -1,0 +1,41 @@
+education:
+  - degree: "Ph.D. in Your Field"
+    institution: "Your University"
+    location: "City, Country"
+    period: "20XX - 20XX"
+    details: "Dissertation: “Your Dissertation Title”"
+  - degree: "B.S. or M.S. in Your Field"
+    institution: "Your University"
+    location: "City, Country"
+    period: "20XX - 20XX"
+    details: ""
+
+experience:
+  - role: "Research Position"
+    institution: "Your Institution"
+    location: "City, Country"
+    period: "20XX - Present"
+    details: "Briefly describe your role using only publicly available, completed work."
+
+awards:
+  - title: "Example Award or Fellowship"
+    organization: "Awarding Organization"
+    year: "20XX"
+
+presentations:
+  - title: "Example Invited Talk or Conference Presentation"
+    event: "Conference or Seminar Name"
+    location: "City, Country"
+    year: "20XX"
+
+teaching:
+  - role: "Teaching Assistant or Instructor"
+    course: "Course Name"
+    institution: "Your Institution"
+    period: "20XX"
+
+service:
+  - role: "Reviewer or Academic Service Role"
+    organization: "Journal, Society, or Event"
+    period: "20XX - Present"
+

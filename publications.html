@@ -1,0 +1,31 @@
+---
+layout: default
+title: Publications
+permalink: /publications/
+description: "Peer-reviewed publications by Your Name."
+---
+<section class="page-hero">
+  <div class="container narrow">
+    <p class="eyebrow">Published work</p>
+    <h1>Publications</h1>
+    <p>Peer-reviewed articles and published scholarly work, listed from newest to oldest.</p>
+    <p class="example-notice"><strong>Template notice:</strong> The entries below are examples and must be replaced before publishing this site.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container narrow">
+    {% assign publications_by_year = site.data.publications | group_by: "year" %}
+    {% for year in publications_by_year %}
+      <section class="year-group" aria-labelledby="year-{{ year.name }}">
+        <h2 id="year-{{ year.name }}">{{ year.name }}</h2>
+        <div class="publication-list">
+          {% for publication in year.items %}
+            {% include publication.html item=publication show_contribution=false %}
+          {% endfor %}
+        </div>
+      </section>
+    {% endfor %}
+  </div>
+</section>
+

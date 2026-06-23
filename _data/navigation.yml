@@ -1,0 +1,9 @@
+- label: Home
+  url: /
+- label: Publications
+  url: /publications/
+- label: CV
+  url: /cv/
+- label: About
+  url: /about/
+

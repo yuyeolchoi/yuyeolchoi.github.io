@@ -1,0 +1,41 @@
+title: "Your Name | Academic Portfolio"
+description: "Academic portfolio and publication record of Your Name."
+url: "https://yourusername.github.io"
+baseurl: ""
+lang: en
+timezone: Asia/Seoul
+
+author:
+  name: "Your Name"
+  initials: "YN"
+  role: "Researcher in Your Field"
+  affiliation: "Your Institution"
+  location: "City, Country"
+  email: "your.email@example.com"
+  bio: >-
+    I study [research topic] using [methods or approaches]. My published work
+    has contributed to [established finding or research area].
+  profile_image: "/assets/images/profile-placeholder.svg"
+  cv_pdf: ""
+
+research_interests:
+  - "Research Area One"
+  - "Research Area Two"
+  - "Method or Technique"
+  - "Application Domain"
+
+social:
+  orcid: ""
+  scholar: ""
+  github: ""
+  linkedin: ""
+
+markdown: kramdown
+permalink: pretty
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - LICENSE
+

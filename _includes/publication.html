@@ -1,0 +1,25 @@
+<article class="publication">
+  <p class="publication-year">{{ include.item.year }}</p>
+  <div class="publication-body">
+    <h3>{{ include.item.title }}</h3>
+    <p class="publication-authors">
+      {% for author in include.item.authors %}
+        {% if author == site.author.name %}<strong>{{ author }}</strong>{% else %}{{ author }}{% endif %}{% unless forloop.last %}, {% endunless %}
+      {% endfor %}
+    </p>
+    <p class="publication-venue">
+      <em>{{ include.item.venue }}</em>{% if include.item.volume != "" %}, {{ include.item.volume }}{% endif %}{% if include.item.issue != "" %}({{ include.item.issue }}){% endif %}{% if include.item.pages != "" %}, {{ include.item.pages }}{% endif %}.
+    </p>
+    {% if include.show_contribution and include.item.contribution != "" %}
+      <p class="publication-contribution">{{ include.item.contribution }}</p>
+    {% endif %}
+    {% if include.item.paper_url != "" or include.item.pdf_url != "" or include.item.doi != "" %}
+      <div class="publication-links">
+        {% if include.item.paper_url != "" %}<a href="{{ include.item.paper_url }}">Article</a>{% endif %}
+        {% if include.item.pdf_url != "" %}<a href="{{ include.item.pdf_url }}">PDF</a>{% endif %}
+        {% if include.item.doi != "" %}<a href="https://doi.org/{{ include.item.doi }}">DOI</a>{% endif %}
+      </div>
+    {% endif %}
+  </div>
+</article>
+
