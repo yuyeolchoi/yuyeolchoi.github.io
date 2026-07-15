@@ -161,22 +161,6 @@
   featured: true
   contribution: "Identified catalytic descriptors for selective electrophilic methane chlorination on zeolites."
 
-- title: "Catalytic Descriptors for Selective Methane Chlorination through Electrophilic Pathway"
-  id: "2022-aiche-methane-chlorination"
-  authors:
-    - "Yuyeol Choi"
-    - "Kyungsu Na"
-  venue: "2022 AIChE Annual Meeting"
-  year: 2022
-  volume: ""
-  issue: ""
-  pages: ""
-  doi: ""
-  paper_url: "https://aiche.confex.com/aiche/2022/meetingapp.cgi/Paper/643842"
-  pdf_url: ""
-  featured: false
-  contribution: "Presented catalytic descriptors for selective methane chlorination."
-
 - title: "Controlled Metal-Support Interactions in Au/CeO2-Mg(OH)2 Catalysts Activating the Direct Oxidative Esterification of Methacrolein with Methanol to Methyl Methacrylate"
   id: "2021-au-ceo2-esterification"
   authors:
