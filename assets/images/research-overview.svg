@@ -1,4 +1,47 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1125" role="img" aria-labelledby="title description">
-  <title id="title">Empty research overview placeholder</title>
-  <desc id="description">Empty placeholder reserved for a future research overview graphic.</desc>
+  <title id="title">Research overview workflow</title>
+  <desc id="description">Workflow linking heterogeneous catalyst design, experimental catalysis, DFT descriptor analysis, and published catalyst design insight.</desc>
+  <rect width="900" height="1125" rx="42" fill="#f7f9fa"/>
+  <circle cx="738" cy="138" r="138" fill="#e8f3f5"/>
+  <circle cx="172" cy="948" r="154" fill="#e8f3f5"/>
+  <g fill="none" stroke="#8eb8c3" stroke-width="3">
+    <path d="M450 238 C520 300 560 368 560 445"/>
+    <path d="M450 565 C378 626 340 700 340 785"/>
+    <path d="M450 565 C520 632 560 708 560 785"/>
+  </g>
+  <g font-family="Inter, Segoe UI, Arial, sans-serif" text-anchor="middle">
+    <text x="450" y="118" fill="#073f50" font-size="42" font-weight="800">Research Overview</text>
+    <text x="450" y="165" fill="#52606d" font-size="24">Experimental catalysis + DFT descriptors</text>
+
+    <g>
+      <rect x="185" y="220" width="530" height="128" rx="28" fill="#ffffff" stroke="#d9e1e5" stroke-width="3"/>
+      <text x="450" y="276" fill="#0b5d75" font-size="26" font-weight="800">Catalyst Design</text>
+      <text x="450" y="318" fill="#52606d" font-size="20">Zeolites, metal oxides, supported metals</text>
+    </g>
+
+    <g>
+      <rect x="150" y="430" width="600" height="150" rx="30" fill="#ffffff" stroke="#d9e1e5" stroke-width="3"/>
+      <text x="450" y="492" fill="#0b5d75" font-size="26" font-weight="800">Reaction Systems</text>
+      <text x="450" y="535" fill="#52606d" font-size="20">C1 conversion and hydrogen production</text>
+    </g>
+
+    <g>
+      <rect x="78" y="785" width="330" height="145" rx="28" fill="#ffffff" stroke="#d9e1e5" stroke-width="3"/>
+      <text x="243" y="842" fill="#0b5d75" font-size="25" font-weight="800">Experiments</text>
+      <text x="243" y="884" fill="#52606d" font-size="19">Synthesis, reaction tests,</text>
+      <text x="243" y="912" fill="#52606d" font-size="19">structure-performance trends</text>
+    </g>
+
+    <g>
+      <rect x="492" y="785" width="330" height="145" rx="28" fill="#ffffff" stroke="#d9e1e5" stroke-width="3"/>
+      <text x="657" y="842" fill="#0b5d75" font-size="25" font-weight="800">DFT Analysis</text>
+      <text x="657" y="884" fill="#52606d" font-size="19">ORCA, Quantum ESPRESSO,</text>
+      <text x="657" y="912" fill="#52606d" font-size="19">descriptors and mechanisms</text>
+    </g>
+
+    <g>
+      <rect x="210" y="995" width="480" height="76" rx="24" fill="#0b5d75"/>
+      <text x="450" y="1043" fill="#ffffff" font-size="24" font-weight="800">Published catalyst design insight</text>
+    </g>
+  </g>
 </svg>

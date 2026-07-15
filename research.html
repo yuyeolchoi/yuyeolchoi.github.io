@@ -25,7 +25,7 @@ description: "Research overview and detailed research stories by Yuyeol Choi."
               {% if theme.publication_titles contains publication.title %}
                 <li>
                   {% if publication.paper_url != "" %}
-                    <a href="{{ publication.paper_url }}">{{ publication.title }}</a>
+                    <a href="{{ publication.paper_url }}" target="_blank" rel="noopener">{{ publication.title }}</a>
                   {% else %}
                     <span>{{ publication.title }}</span>
                   {% endif %}
