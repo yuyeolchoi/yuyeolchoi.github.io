@@ -2,6 +2,8 @@ title: "Yuyeol Choi | Academic Portfolio"
 description: "Academic portfolio and publication record of Yuyeol Choi."
 url: "https://yuyeolchoi.github.io"
 baseurl: ""
+# TODO(owner): Add a dedicated social preview image path when available.
+# image: "/assets/images/og-image.png"
 lang: en
 timezone: Asia/Seoul
 
