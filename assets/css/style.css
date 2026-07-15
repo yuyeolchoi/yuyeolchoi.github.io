@@ -197,6 +197,17 @@ p { margin-top: 0; }
 .publication-contribution { margin: 0.85rem 0 0; padding-left: 1rem; border-left: 3px solid #8eb8c3; }
 .publication-links { display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 0.8rem; }
 .publication-links a { font-size: 0.9rem; font-weight: 750; }
+.related-publications {
+  margin: 0.8rem 0 0;
+  padding-left: 1.1rem;
+}
+.related-publications li + li { margin-top: 0.75rem; }
+.related-publications a { font-weight: 750; }
+.related-publications span {
+  display: block;
+  color: var(--muted);
+  font-size: 0.94rem;
+}
 .cv-publication-list .publication { grid-template-columns: 52px 1fr; padding: 1.15rem 0; }
 .cv-publication-list .publication h3 { font-size: 1rem; }
 .cv-publication-list .publication-authors,
@@ -226,6 +237,7 @@ p { margin-top: 0; }
 .detail-card h2 { font-size: 1.5rem; }
 .detail-card h2, .detail-card h3 { margin-bottom: 0.55rem; }
 .detail-card p:last-child { margin-bottom: 0; }
+.research-theme h3 { margin-top: 1.15rem; font-size: 1rem; }
 .meta-line { font-weight: 650; }
 .experience-block + .experience-block { margin-top: 4rem; }
 .experience-block > h2 { margin-bottom: 1.2rem; font-size: 1.65rem; }
@@ -281,12 +293,15 @@ p { margin-top: 0; }
 .skill-list { display: grid; gap: 1rem; grid-template-columns: repeat(2, minmax(0, 1fr)); margin-top: 1rem; }
 .prose { max-width: 740px; }
 .prose > p { margin-bottom: 1.5rem; font-size: 1.08rem; }
+.profile-links { margin-top: 2.2rem; }
+.profile-links h2 { margin-bottom: 0.4rem; font-size: 1.35rem; }
 .writing-note h2 { margin-bottom: 0.55rem; font-size: 1.15rem; }
 .writing-note p { margin-bottom: 0; font-size: 1rem; }
 
 .site-footer { padding: 2rem 0; border-top: 1px solid var(--line); color: var(--muted); font-size: 0.86rem; }
 .footer-inner { display: flex; justify-content: space-between; gap: 1rem; }
 .footer-inner p { margin: 0; }
+.site-footer .social-links { margin-top: 0.45rem; }
 
 @media (max-width: 740px) {
   body { font-size: 16px; }

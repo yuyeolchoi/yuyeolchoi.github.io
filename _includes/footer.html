@@ -1,7 +1,10 @@
 <footer class="site-footer">
   <div class="container footer-inner">
     <p>&copy; {{ "now" | date: "%Y" }} {{ site.author.name }}.</p>
-    <p>Built with Jekyll and hosted on GitHub Pages.</p>
+    <div>
+      <p>Built with Jekyll and hosted on GitHub Pages.</p>
+      {% include social-links.html %}
+    </div>
   </div>
 </footer>
 

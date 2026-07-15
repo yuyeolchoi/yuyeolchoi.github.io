@@ -2,17 +2,30 @@
   {% if site.author.email != "" %}
     <a href="mailto:{{ site.author.email }}">Email</a>
   {% endif %}
-  {% if site.social.orcid != "" %}
-    <a href="{{ site.social.orcid }}" rel="me">ORCID</a>
-  {% endif %}
-  {% if site.social.scholar != "" %}
-    <a href="{{ site.social.scholar }}">Google Scholar</a>
-  {% endif %}
-  {% if site.social.github != "" %}
-    <a href="{{ site.social.github }}" rel="me">GitHub</a>
-  {% endif %}
-  {% if site.social.linkedin != "" %}
-    <a href="{{ site.social.linkedin }}" rel="me">LinkedIn</a>
-  {% endif %}
+
+  {% assign scholar = site.social.scholar | default: "" %}
+  {% unless scholar == "" or scholar contains "TODO" %}
+    <a href="{{ scholar }}" target="_blank" rel="noopener" aria-label="Google Scholar profile">Google Scholar</a>
+  {% endunless %}
+
+  {% assign orcid = site.social.orcid | default: "" %}
+  {% unless orcid == "" or orcid contains "TODO" %}
+    <a href="{{ orcid }}" target="_blank" rel="noopener me" aria-label="ORCID profile">ORCID</a>
+  {% endunless %}
+
+  {% assign researchgate = site.social.researchgate | default: "" %}
+  {% unless researchgate == "" or researchgate contains "TODO" %}
+    <a href="{{ researchgate }}" target="_blank" rel="noopener" aria-label="ResearchGate profile">ResearchGate</a>
+  {% endunless %}
+
+  {% assign github = site.social.github | default: "" %}
+  {% unless github == "" or github contains "TODO" %}
+    <a href="{{ github }}" target="_blank" rel="noopener me" aria-label="GitHub profile">GitHub</a>
+  {% endunless %}
+
+  {% assign linkedin = site.social.linkedin | default: "" %}
+  {% unless linkedin == "" or linkedin contains "TODO" %}
+    <a href="{{ linkedin }}" target="_blank" rel="noopener me" aria-label="LinkedIn profile">LinkedIn</a>
+  {% endunless %}
 </div>
 

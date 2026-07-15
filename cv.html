@@ -15,9 +15,8 @@ body_class: cv-page
     <div class="cv-actions">
       {% if site.author.cv_pdf != "" %}
         <a class="button" href="{{ site.author.cv_pdf | relative_url }}">Download PDF CV</a>
-      {% else %}
-        <span class="button button-disabled" title="Add a PDF path in _config.yml">PDF coming soon</span>
       {% endif %}
+      {% comment %}TODO(owner): Add a public CV PDF path in _config.yml when available.{% endcomment %}
       <button class="button button-secondary print-button" type="button" onclick="window.print()">Print this page</button>
     </div>
   </div>

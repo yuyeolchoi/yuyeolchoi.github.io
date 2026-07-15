@@ -8,15 +8,34 @@ description: "Research overview and detailed research stories by Yuyeol Choi."
   <div class="container narrow">
     <p class="eyebrow">Research overview</p>
     <h1>Research</h1>
-    <p>Detailed research stories and dissertation overview will be updated after publicly shareable materials are prepared.</p>
+    <p>Research themes summarized from published work and publicly shareable academic records.</p>
   </div>
 </section>
 
 <section class="section">
   <div class="container narrow">
-    <article class="detail-card">
-      <h2>Updates coming soon</h2>
-      <p>This page will be updated with publicly shareable research process details.</p>
-    </article>
+    <div class="detail-list">
+      {% for theme in site.data.research_themes %}
+        <article class="detail-card research-theme">
+          <h2>{{ theme.title }}</h2>
+          <p>{{ theme.description }}</p>
+          <h3>Related publications</h3>
+          <ul class="related-publications">
+            {% for publication in site.data.publications %}
+              {% if theme.publication_titles contains publication.title %}
+                <li>
+                  {% if publication.paper_url != "" %}
+                    <a href="{{ publication.paper_url }}">{{ publication.title }}</a>
+                  {% else %}
+                    <span>{{ publication.title }}</span>
+                  {% endif %}
+                  <span>{{ publication.venue }}, {{ publication.year }}</span>
+                </li>
+              {% endif %}
+            {% endfor %}
+          </ul>
+        </article>
+      {% endfor %}
+    </div>
   </div>
 </section>

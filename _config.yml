@@ -17,6 +17,7 @@ author:
     hydrogen production, combining experimental catalysis with DFT-based
     descriptor and mechanism analysis.
   profile_image: "/assets/images/research-overview.svg"
+  # TODO(owner): Upload a public CV PDF to assets/cv/ and set this path.
   cv_pdf: ""
 
 research_interests:
@@ -27,8 +28,11 @@ research_interests:
   - "Catalyst descriptors and metal-support interactions"
 
 social:
+  # Google Scholar profile used as the public source for the publication list.
+  scholar: "https://scholar.google.com/citations?user=gExFOsIAAAAJ"
+  # TODO(owner): Add ORCID, ResearchGate, GitHub, and LinkedIn URLs if used publicly.
   orcid: ""
-  scholar: ""
+  researchgate: ""
   github: ""
   linkedin: ""
 
