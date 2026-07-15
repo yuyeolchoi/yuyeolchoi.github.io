@@ -1,0 +1,25 @@
+{% if page.url == "/publications/" %}
+  {% for publication in site.data.publications %}
+    <meta name="citation_title" content="{{ publication.title | escape }}">
+    {% for author in publication.authors %}
+      <meta name="citation_author" content="{{ author | escape }}">
+    {% endfor %}
+    <meta name="citation_publication_date" content="{{ publication.year }}">
+    <meta name="citation_journal_title" content="{{ publication.venue | escape }}">
+    {% if publication.volume != "" %}
+      <meta name="citation_volume" content="{{ publication.volume | escape }}">
+    {% endif %}
+    {% if publication.issue != "" %}
+      <meta name="citation_issue" content="{{ publication.issue | escape }}">
+    {% endif %}
+    {% if publication.pages != "" %}
+      <meta name="citation_firstpage" content="{{ publication.pages | split: '-' | first | escape }}">
+    {% endif %}
+    {% if publication.doi != "" %}
+      <meta name="citation_doi" content="{{ publication.doi | escape }}">
+    {% endif %}
+    {% if publication.paper_url != "" %}
+      <meta name="citation_public_url" content="{{ publication.paper_url | escape }}">
+    {% endif %}
+  {% endfor %}
+{% endif %}

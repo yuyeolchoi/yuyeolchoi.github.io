@@ -1,0 +1,29 @@
+{% assign scholar = site.social.scholar | default: "" %}
+{% assign orcid = site.social.orcid | default: "" %}
+{% assign researchgate = site.social.researchgate | default: "" %}
+{% assign github = site.social.github | default: "" %}
+{% assign linkedin = site.social.linkedin | default: "" %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": {{ site.author.name | jsonify }},
+  "jobTitle": {{ site.author.role | jsonify }},
+  "affiliation": {
+    "@type": "Organization",
+    "name": {{ site.author.affiliation | jsonify }}
+  },
+  "email": {{ site.author.email | prepend: "mailto:" | jsonify }},
+  "url": {{ site.url | append: site.baseurl | jsonify }}
+  {% if scholar != "" or orcid != "" or researchgate != "" or github != "" or linkedin != "" %},
+  "sameAs": [
+    {% assign first_same_as = true %}
+    {% if scholar != "" %}{% unless first_same_as %},{% endunless %}{{ scholar | jsonify }}{% assign first_same_as = false %}{% endif %}
+    {% if orcid != "" %}{% unless first_same_as %},{% endunless %}{{ orcid | jsonify }}{% assign first_same_as = false %}{% endif %}
+    {% if researchgate != "" %}{% unless first_same_as %},{% endunless %}{{ researchgate | jsonify }}{% assign first_same_as = false %}{% endif %}
+    {% if github != "" %}{% unless first_same_as %},{% endunless %}{{ github | jsonify }}{% assign first_same_as = false %}{% endif %}
+    {% if linkedin != "" %}{% unless first_same_as %},{% endunless %}{{ linkedin | jsonify }}{% endif %}
+  ]
+  {% endif %}
+}
+</script>

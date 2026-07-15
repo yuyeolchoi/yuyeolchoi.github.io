@@ -15,9 +15,9 @@
     {% endif %}
     {% if include.item.paper_url != "" or include.item.pdf_url != "" or include.item.doi != "" %}
       <div class="publication-links">
-        {% if include.item.paper_url != "" %}<a href="{{ include.item.paper_url }}">Article</a>{% endif %}
-        {% if include.item.pdf_url != "" %}<a href="{{ include.item.pdf_url }}">PDF</a>{% endif %}
-        {% if include.item.doi != "" %}<a href="https://doi.org/{{ include.item.doi }}">DOI</a>{% endif %}
+        {% if include.item.paper_url != "" %}<a href="{{ include.item.paper_url }}" target="_blank" rel="noopener">Article</a>{% endif %}
+        {% if include.item.pdf_url != "" %}<a href="{{ include.item.pdf_url }}" target="_blank" rel="noopener">PDF</a>{% endif %}
+        {% if include.item.doi != "" %}<a href="https://doi.org/{{ include.item.doi }}" target="_blank" rel="noopener">DOI</a>{% endif %}
       </div>
     {% endif %}
   </div>
