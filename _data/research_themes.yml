@@ -1,31 +1,31 @@
 - title: "C1 chemistry and methane/CO2 activation"
   description: "Published work in this area focuses on heterogeneous catalysis for C1 conversion, including methane chlorination and sequential CO2/CH4 activation on zeolite and metal oxide catalysts."
-  publication_titles:
-    - "Unveiling the sequential CO2/CH4 activation process on Co3O4 nanoparticles encapsulated by mesoporous silica shell"
-    - "A sustainable carbon-consuming cycle based on sequential activation of CO2 and CH4 using metal oxides"
-    - "Controlled electropositive catalytic sites on zeolites for achieving high CH3Cl selectivity via electrophilic CH4 chlorination using Cl2"
-    - "Catalytic Descriptors for Selective Methane Chlorination through Electrophilic Pathway"
-    - "CH4 chlorination with Cl2 using zeolites having different surface polarities: catalysis descriptors explaining the electrophilic pathway"
+  publication_ids:
+    - "2024-co3o4-co2-ch4-activation"
+    - "2023-carbon-consuming-cycle"
+    - "2022-zeolite-methane-chlorination"
+    - "2022-aiche-methane-chlorination"
+    - "2020-zeolite-ch4-chlorination"
 
 - title: "Catalytic dehydrogenation and hydrogen production"
   description: "This theme connects catalyst design principles with dehydrogenation-based hydrogen production and liquid organic hydrogen carrier systems."
-  publication_titles:
-    - "Catalytic dehydrogenation for hydrogen production controlled by metal-supported heterogeneous catalysts"
-    - "Methylbenzyl naphthalene: Liquid organic hydrogen carrier for facile hydrogen storage and release"
-    - "Catalytic consequences of supported Pd catalysts on dehydrogenative H2 evolution from 2-[(n-methylcyclohexyl)methyl]piperidine as the liquid organic hydrogen carrier"
+  publication_ids:
+    - "2024-dehydrogenation-review"
+    - "2023-methylbenzyl-naphthalene"
+    - "2020-pd-lohc-dehydrogenation"
 
 - title: "Zeolite, metal oxide, and supported metal catalysts"
   description: "Across published studies, this work examines zeolite, metal oxide, and supported metal catalyst systems with emphasis on structure-performance relationships."
-  publication_titles:
-    - "Controlled electropositive catalytic sites on zeolites for achieving high CH3Cl selectivity via electrophilic CH4 chlorination using Cl2"
-    - "Controlled Metal-Support Interactions in Au/CeO2-Mg(OH)2 Catalysts Activating the Direct Oxidative Esterification of Methacrolein with Methanol to Methyl Methacrylate"
-    - "Catalytic Effects of Zeolite Socony Mobil-5 (ZSM-5) on the Oxidation of Acoustically Levitated exo-Tetrahydrodicyclopentadiene (JP-10) Droplets"
-    - "Selective and rapid capture of Sr2+ with LTA zeolites: Effect of crystal sizes and mesoporosity"
+  publication_ids:
+    - "2022-zeolite-methane-chlorination"
+    - "2021-au-ceo2-esterification"
+    - "2021-zsm5-jp10-oxidation"
+    - "2020-lta-sr-capture"
 
 - title: "Catalyst descriptors and mechanism analysis"
   description: "This theme highlights DFT-based descriptor and mechanism analysis used to interpret adsorption, activation trends, and metal-support interactions in published catalyst studies."
-  publication_titles:
-    - "Catalytic dehydrogenation for hydrogen production controlled by metal-supported heterogeneous catalysts"
-    - "Controlled electropositive catalytic sites on zeolites for achieving high CH3Cl selectivity via electrophilic CH4 chlorination using Cl2"
-    - "Catalytic Descriptors for Selective Methane Chlorination through Electrophilic Pathway"
-    - "CH4 chlorination with Cl2 using zeolites having different surface polarities: catalysis descriptors explaining the electrophilic pathway"
+  publication_ids:
+    - "2024-dehydrogenation-review"
+    - "2022-zeolite-methane-chlorination"
+    - "2022-aiche-methane-chlorination"
+    - "2020-zeolite-ch4-chlorination"

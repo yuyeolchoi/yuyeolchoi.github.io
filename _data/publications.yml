@@ -2,6 +2,7 @@
 # https://scholar.google.com/citations?user=gExFOsIAAAAJ
 # Keep entries ordered newest first. Use empty strings when DOI or PDF links are unavailable.
 - title: "Cinnamon sticks-derived N-doped activated carbons with tailored aperture environment for efficient adsorption and separation of C2H2/CO2 and C2H4/CO2"
+  id: "2026-activated-carbons-gas-separation"
   authors:
     - "Pillaiyar Puthiaraj"
     - "Yuyeol Choi"
@@ -20,6 +21,7 @@
   contribution: "Reported biomass-derived N-doped activated carbons for selective gas adsorption and separation."
 
 - title: "Direct synthesis of 2,5-furandicarboxylic acid from biomass-derived fructose using multifunctional PdRu nanoparticles supported mesoporous organic polymers functionalized with sulfonic acid"
+  id: "2025-fdca-synthesis"
   authors:
     - "Pillaiyar Puthiaraj"
     - "Jongmin Park"
@@ -38,6 +40,7 @@
   contribution: "Developed a multifunctional catalytic route for biomass-derived FDCA synthesis."
 
 - title: "Catalytic dehydrogenation for hydrogen production controlled by metal-supported heterogeneous catalysts"
+  id: "2024-dehydrogenation-review"
   authors:
     - "Yuyeol Choi"
     - "Xinkai Wu"
@@ -55,6 +58,7 @@
   contribution: "Reviewed catalyst design principles for dehydrogenation-based hydrogen production."
 
 - title: "Unveiling the sequential CO2/CH4 activation process on Co3O4 nanoparticles encapsulated by mesoporous silica shell"
+  id: "2024-co3o4-co2-ch4-activation"
   authors:
     - "Hyogeun Yang"
     - "Seungdon Kwon"
@@ -77,6 +81,7 @@
   contribution: "Investigated sequential CO2/CH4 activation on encapsulated cobalt oxide nanoparticles."
 
 - title: "Enabling direct seawater electrolysis by redox-inactive amphiphilic amines via chloride sequestration"
+  id: "2024-seawater-electrolysis"
   authors:
     - "Marco Milia"
     - "Yuyeol Choi"
@@ -95,6 +100,7 @@
   contribution: "Demonstrated chloride sequestration strategies for direct seawater electrolysis."
 
 - title: "Methylbenzyl naphthalene: Liquid organic hydrogen carrier for facile hydrogen storage and release"
+  id: "2023-methylbenzyl-naphthalene"
   authors:
     - "Purna Chandra Rao"
     - "Yongseok Kim"
@@ -115,6 +121,7 @@
   contribution: "Studied methylbenzyl naphthalene as a liquid organic hydrogen carrier."
 
 - title: "A sustainable carbon-consuming cycle based on sequential activation of CO2 and CH4 using metal oxides"
+  id: "2023-carbon-consuming-cycle"
   authors:
     - "Seungdon Kwon"
     - "Hyogeun Yang"
@@ -136,6 +143,7 @@
   contribution: "Explored metal oxide-assisted sequential activation of CO2 and CH4."
 
 - title: "Controlled electropositive catalytic sites on zeolites for achieving high CH3Cl selectivity via electrophilic CH4 chlorination using Cl2"
+  id: "2022-zeolite-methane-chlorination"
   authors:
     - "Yuyeol Choi"
     - "Sunghyun Park"
@@ -154,6 +162,7 @@
   contribution: "Identified catalytic descriptors for selective electrophilic methane chlorination on zeolites."
 
 - title: "Catalytic Descriptors for Selective Methane Chlorination through Electrophilic Pathway"
+  id: "2022-aiche-methane-chlorination"
   authors:
     - "Yuyeol Choi"
     - "Kyungsu Na"
@@ -169,6 +178,7 @@
   contribution: "Presented catalytic descriptors for selective methane chlorination."
 
 - title: "Controlled Metal-Support Interactions in Au/CeO2-Mg(OH)2 Catalysts Activating the Direct Oxidative Esterification of Methacrolein with Methanol to Methyl Methacrylate"
+  id: "2021-au-ceo2-esterification"
   authors:
     - "Nagyeong Kim"
     - "Seulgi Lim"
@@ -188,6 +198,7 @@
   contribution: "Examined metal-support interactions in Au/CeO2-Mg(OH)2 esterification catalysts."
 
 - title: "Catalytic Effects of Zeolite Socony Mobil-5 (ZSM-5) on the Oxidation of Acoustically Levitated exo-Tetrahydrodicyclopentadiene (JP-10) Droplets"
+  id: "2021-zsm5-jp10-oxidation"
   authors:
     - "Sahan D. Perera"
     - "Stephen J. Brotton"
@@ -207,6 +218,7 @@
   contribution: "Studied ZSM-5 catalytic effects on JP-10 droplet oxidation."
 
 - title: "Catalytic consequences of supported Pd catalysts on dehydrogenative H2 evolution from 2-[(n-methylcyclohexyl)methyl]piperidine as the liquid organic hydrogen carrier"
+  id: "2020-pd-lohc-dehydrogenation"
   authors:
     - "Yongseok Kim"
     - "Yohan Song"
@@ -227,6 +239,7 @@
   contribution: "Evaluated supported Pd catalysts for LOHC dehydrogenation."
 
 - title: "CH4 chlorination with Cl2 using zeolites having different surface polarities: catalysis descriptors explaining the electrophilic pathway"
+  id: "2020-zeolite-ch4-chlorination"
   authors:
     - "Seungdon Kwon"
     - "Sunghyun Park"
@@ -246,6 +259,7 @@
   contribution: "Connected zeolite surface polarity with electrophilic methane chlorination descriptors."
 
 - title: "Selective and rapid capture of Sr2+ with LTA zeolites: Effect of crystal sizes and mesoporosity"
+  id: "2020-lta-sr-capture"
   authors:
     - "Seungdon Kwon"
     - "Yuyeol Choi"
