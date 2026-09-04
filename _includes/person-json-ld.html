@@ -1,8 +1,25 @@
+{% comment %}
+  schema.org Person structured data. Empty profile values are omitted from sameAs.
+  site.social.orcid holds the bare ORCID iD; the full URL is built here.
+{% endcomment %}
 {% assign scholar = site.social.scholar | default: "" %}
 {% assign orcid = site.social.orcid | default: "" %}
 {% assign researchgate = site.social.researchgate | default: "" %}
 {% assign github = site.social.github | default: "" %}
 {% assign linkedin = site.social.linkedin | default: "" %}
+{% if orcid contains "orcid.org" %}
+  {% assign orcid_url = orcid %}
+{% elsif orcid != "" %}
+  {% assign orcid_url = "https://orcid.org/" | append: orcid %}
+{% else %}
+  {% assign orcid_url = "" %}
+{% endif %}
+{% assign same_as = "" | split: "" %}
+{% unless scholar == "" or scholar contains "TODO" %}{% assign same_as = same_as | push: scholar %}{% endunless %}
+{% unless orcid_url == "" or orcid_url contains "TODO" %}{% assign same_as = same_as | push: orcid_url %}{% endunless %}
+{% unless researchgate == "" or researchgate contains "TODO" %}{% assign same_as = same_as | push: researchgate %}{% endunless %}
+{% unless github == "" or github contains "TODO" %}{% assign same_as = same_as | push: github %}{% endunless %}
+{% unless linkedin == "" or linkedin contains "TODO" %}{% assign same_as = same_as | push: linkedin %}{% endunless %}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -14,16 +31,7 @@
     "name": {{ site.author.affiliation | jsonify }}
   },
   "email": {{ site.author.email | prepend: "mailto:" | jsonify }},
-  "url": {{ site.url | append: site.baseurl | jsonify }}
-  {% if scholar != "" or orcid != "" or researchgate != "" or github != "" or linkedin != "" %},
-  "sameAs": [
-    {% assign first_same_as = true %}
-    {% if scholar != "" %}{% unless first_same_as %},{% endunless %}{{ scholar | jsonify }}{% assign first_same_as = false %}{% endif %}
-    {% if orcid != "" %}{% unless first_same_as %},{% endunless %}{{ orcid | jsonify }}{% assign first_same_as = false %}{% endif %}
-    {% if researchgate != "" %}{% unless first_same_as %},{% endunless %}{{ researchgate | jsonify }}{% assign first_same_as = false %}{% endif %}
-    {% if github != "" %}{% unless first_same_as %},{% endunless %}{{ github | jsonify }}{% assign first_same_as = false %}{% endif %}
-    {% if linkedin != "" %}{% unless first_same_as %},{% endunless %}{{ linkedin | jsonify }}{% endif %}
-  ]
-  {% endif %}
+  "url": {{ site.url | append: site.baseurl | jsonify }}{% if same_as.size > 0 %},
+  "sameAs": {{ same_as | jsonify }}{% endif %}
 }
 </script>

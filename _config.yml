@@ -31,9 +31,12 @@ research_interests:
 
 social:
   # Google Scholar profile used as the public source for the publication list.
+  # Keep the bare profile URL (no &hl= language parameter).
   scholar: "https://scholar.google.com/citations?user=gExFOsIAAAAJ"
-  # TODO(owner): Add ORCID, ResearchGate, GitHub, and LinkedIn URLs if used publicly.
-  orcid: ""
+  # ORCID iD only; templates build the link as https://orcid.org/<id>.
+  orcid: "0000-0001-8903-3551"
+  # TODO(owner): Add ResearchGate, GitHub, and LinkedIn URLs if used publicly.
+  # Leave unused values as empty strings so they are not rendered.
   researchgate: ""
   github: ""
   linkedin: ""

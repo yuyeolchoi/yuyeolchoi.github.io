@@ -1,31 +1,40 @@
-<div class="social-links" aria-label="Research and professional profiles">
-  {% if site.author.email != "" %}
-    <a href="mailto:{{ site.author.email }}">Email</a>
+{% comment %}
+  Profile links. Each link renders only when its value in _config.yml is non-empty.
+  site.social.orcid holds the bare ORCID iD (e.g. 0000-0001-8903-3551); a full
+  https://orcid.org/... URL is also accepted.
+{% endcomment %}
+{% assign scholar = site.social.scholar | default: "" %}
+{% assign orcid = site.social.orcid | default: "" %}
+{% assign researchgate = site.social.researchgate | default: "" %}
+{% assign github = site.social.github | default: "" %}
+{% assign linkedin = site.social.linkedin | default: "" %}
+{% if orcid contains "orcid.org" %}
+  {% assign orcid_url = orcid %}
+{% else %}
+  {% assign orcid_url = "https://orcid.org/" | append: orcid %}
+{% endif %}
+<div class="social-links" role="group" aria-label="Research and professional profiles">
+  {% if site.author.email and site.author.email != "" %}
+    <a href="mailto:{{ site.author.email }}" aria-label="Email {{ site.author.name }}">Email</a>
   {% endif %}
 
-  {% assign scholar = site.social.scholar | default: "" %}
   {% unless scholar == "" or scholar contains "TODO" %}
     <a href="{{ scholar }}" target="_blank" rel="noopener" aria-label="Google Scholar profile">Google Scholar</a>
   {% endunless %}
 
-  {% assign orcid = site.social.orcid | default: "" %}
   {% unless orcid == "" or orcid contains "TODO" %}
-    <a href="{{ orcid }}" target="_blank" rel="noopener me" aria-label="ORCID profile">ORCID</a>
+    <a href="{{ orcid_url }}" target="_blank" rel="noopener me" aria-label="ORCID profile">ORCID</a>
   {% endunless %}
 
-  {% assign researchgate = site.social.researchgate | default: "" %}
   {% unless researchgate == "" or researchgate contains "TODO" %}
     <a href="{{ researchgate }}" target="_blank" rel="noopener" aria-label="ResearchGate profile">ResearchGate</a>
   {% endunless %}
 
-  {% assign github = site.social.github | default: "" %}
   {% unless github == "" or github contains "TODO" %}
     <a href="{{ github }}" target="_blank" rel="noopener me" aria-label="GitHub profile">GitHub</a>
   {% endunless %}
 
-  {% assign linkedin = site.social.linkedin | default: "" %}
   {% unless linkedin == "" or linkedin contains "TODO" %}
     <a href="{{ linkedin }}" target="_blank" rel="noopener me" aria-label="LinkedIn profile">LinkedIn</a>
   {% endunless %}
 </div>
-
