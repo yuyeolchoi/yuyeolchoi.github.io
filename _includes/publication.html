@@ -1,4 +1,25 @@
-<article class="publication">
+{% comment %}
+  Shared publication renderer used by Home (featured), Publications (full) and CV (concise).
+  Parameters: item (entry from _data/publications.yml), show_contribution (true|false),
+  filterable (true|false; adds data-* attributes used by assets/js/publications-filter.js).
+  Optional keys (volume, issue, pages, doi, paper_url, pdf_url, contribution) may be "" or absent.
+{% endcomment %}
+{% assign pub_volume = include.item.volume | default: "" %}
+{% assign pub_issue = include.item.issue | default: "" %}
+{% assign pub_pages = include.item.pages | default: "" %}
+{% assign pub_doi = include.item.doi | default: "" %}
+{% assign pub_paper_url = include.item.paper_url | default: "" %}
+{% assign pub_pdf_url = include.item.pdf_url | default: "" %}
+{% assign pub_contribution = include.item.contribution | default: "" %}
+{% if include.filterable %}
+  {% assign pub_themes = "" %}
+  {% for theme in site.data.research_themes %}
+    {% if theme.publication_ids contains include.item.id %}
+      {% assign pub_themes = pub_themes | append: " " | append: forloop.index %}
+    {% endif %}
+  {% endfor %}
+{% endif %}
+<article class="publication"{% if include.filterable %} data-year="{{ include.item.year }}" data-themes="{{ pub_themes | strip }}"{% endif %}>
   <p class="publication-year">{{ include.item.year }}</p>
   <div class="publication-body">
     <h3>{{ include.item.title }}</h3>
@@ -8,18 +29,17 @@
       {% endfor %}
     </p>
     <p class="publication-venue">
-      <em>{{ include.item.venue }}</em>{% if include.item.volume != "" %}, {{ include.item.volume }}{% endif %}{% if include.item.issue != "" %}({{ include.item.issue }}){% endif %}{% if include.item.pages != "" %}, {{ include.item.pages }}{% endif %}.
+      <em>{{ include.item.venue }}</em>{% if pub_volume != "" %}, {{ pub_volume }}{% endif %}{% if pub_issue != "" %}({{ pub_issue }}){% endif %}{% if pub_pages != "" %}, {{ pub_pages }}{% endif %}.
     </p>
-    {% if include.show_contribution and include.item.contribution != "" %}
-      <p class="publication-contribution">{{ include.item.contribution }}</p>
+    {% if include.show_contribution and pub_contribution != "" %}
+      <p class="publication-contribution">{{ pub_contribution }}</p>
     {% endif %}
-    {% if include.item.paper_url != "" or include.item.pdf_url != "" or include.item.doi != "" %}
+    {% if pub_paper_url != "" or pub_pdf_url != "" or pub_doi != "" %}
       <div class="publication-links">
-        {% if include.item.paper_url != "" %}<a href="{{ include.item.paper_url }}" target="_blank" rel="noopener">Article</a>{% endif %}
-        {% if include.item.pdf_url != "" %}<a href="{{ include.item.pdf_url }}" target="_blank" rel="noopener">PDF</a>{% endif %}
-        {% if include.item.doi != "" %}<a href="https://doi.org/{{ include.item.doi }}" target="_blank" rel="noopener">DOI</a>{% endif %}
+        {% if pub_paper_url != "" %}<a href="{{ pub_paper_url }}" target="_blank" rel="noopener">Article</a>{% endif %}
+        {% if pub_pdf_url != "" %}<a href="{{ pub_pdf_url }}" target="_blank" rel="noopener">PDF</a>{% endif %}
+        {% if pub_doi != "" %}<a href="https://doi.org/{{ pub_doi }}" target="_blank" rel="noopener">DOI</a>{% endif %}
       </div>
     {% endif %}
   </div>
 </article>
-

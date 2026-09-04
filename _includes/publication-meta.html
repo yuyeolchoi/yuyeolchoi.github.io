@@ -1,25 +1,38 @@
+{% comment %}
+  Google Scholar citation meta tags, generated from _data/publications.yml on the
+  publications page only. Empty or missing optional fields are skipped.
+{% endcomment %}
 {% if page.url == "/publications/" %}
   {% for publication in site.data.publications %}
+    {% assign meta_volume = publication.volume | default: "" %}
+    {% assign meta_issue = publication.issue | default: "" %}
+    {% assign meta_pages = publication.pages | default: "" %}
+    {% assign meta_doi = publication.doi | default: "" %}
+    {% assign meta_url = publication.paper_url | default: "" %}
     <meta name="citation_title" content="{{ publication.title | escape }}">
     {% for author in publication.authors %}
       <meta name="citation_author" content="{{ author | escape }}">
     {% endfor %}
     <meta name="citation_publication_date" content="{{ publication.year }}">
     <meta name="citation_journal_title" content="{{ publication.venue | escape }}">
-    {% if publication.volume != "" %}
-      <meta name="citation_volume" content="{{ publication.volume | escape }}">
+    {% if meta_volume != "" %}
+      <meta name="citation_volume" content="{{ meta_volume | escape }}">
     {% endif %}
-    {% if publication.issue != "" %}
-      <meta name="citation_issue" content="{{ publication.issue | escape }}">
+    {% if meta_issue != "" %}
+      <meta name="citation_issue" content="{{ meta_issue | escape }}">
     {% endif %}
-    {% if publication.pages != "" %}
-      <meta name="citation_firstpage" content="{{ publication.pages | split: '-' | first | escape }}">
+    {% if meta_pages != "" %}
+      {% assign page_parts = meta_pages | split: "-" %}
+      <meta name="citation_firstpage" content="{{ page_parts | first | escape }}">
+      {% if page_parts.size > 1 %}
+        <meta name="citation_lastpage" content="{{ page_parts | last | escape }}">
+      {% endif %}
     {% endif %}
-    {% if publication.doi != "" %}
-      <meta name="citation_doi" content="{{ publication.doi | escape }}">
+    {% if meta_doi != "" %}
+      <meta name="citation_doi" content="{{ meta_doi | escape }}">
     {% endif %}
-    {% if publication.paper_url != "" %}
-      <meta name="citation_public_url" content="{{ publication.paper_url | escape }}">
+    {% if meta_url != "" %}
+      <meta name="citation_public_url" content="{{ meta_url | escape }}">
     {% endif %}
   {% endfor %}
 {% endif %}

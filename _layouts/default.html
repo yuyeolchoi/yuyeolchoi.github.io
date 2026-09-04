@@ -9,7 +9,7 @@
     {% include publication-meta.html %}
     <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
   </head>
-  <body>
+  <body{% if page.body_class %} class="{{ page.body_class }}"{% endif %}>
     <a class="skip-link" href="#main-content">Skip to content</a>
     {% include header.html %}
     <main id="main-content" class="site-main">
