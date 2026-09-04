@@ -236,6 +236,34 @@ p { margin-top: 0; }
   color: var(--muted);
   background: white;
 }
+.publication-filters {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.8fr) auto;
+  gap: 0.9rem;
+  align-items: end;
+  margin-bottom: 2.6rem;
+  padding: 1.1rem 1.25rem;
+  border: 1px solid var(--line);
+  border-radius: 0.8rem;
+  background: var(--canvas);
+}
+.filter-field { display: grid; gap: 0.35rem; min-width: 0; }
+.filter-field label { color: var(--muted); font-size: 0.8rem; font-weight: 750; letter-spacing: 0.04em; text-transform: uppercase; }
+.filter-field select {
+  width: 100%;
+  min-height: 44px;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #b8cdd3;
+  border-radius: 0.35rem;
+  color: var(--ink);
+  background: white;
+  font: inherit;
+}
+.filter-field select:focus-visible { outline: 3px solid var(--accent-dark); outline-offset: 2px; }
+.filter-reset { align-self: end; }
+.filter-status { grid-column: 1 / -1; margin: 0; color: var(--muted); font-size: 0.92rem; }
+.filter-status:empty { display: none; }
+[hidden] { display: none !important; }
 .year-group + .year-group { margin-top: 4rem; }
 .year-group > h2 { margin-bottom: 1rem; font-size: 1.6rem; }
 .detail-list { display: grid; gap: 1rem; }
@@ -338,6 +366,8 @@ p { margin-top: 0; }
   .hero-image-wrap { width: min(60vw, 240px); }
   .heading-row { align-items: flex-start; flex-direction: column; gap: 1rem; }
   .summary-grid, .skill-list, .expertise-grid { grid-template-columns: 1fr; }
+  .publication-filters { grid-template-columns: 1fr; }
+  .filter-reset { justify-self: start; }
   .publication { grid-template-columns: 1fr; gap: 0.25rem; }
   .publication-year { margin-bottom: 0; }
   .cv-actions { justify-content: flex-start; }
@@ -374,7 +404,7 @@ p { margin-top: 0; }
 @media print {
   @page { margin: 1.5cm; }
   body { color: black; font-size: 10.5pt; }
-  .site-header, .site-footer, .cv-actions, .cv-jump-nav, .skip-link { display: none !important; }
+  .site-header, .site-footer, .cv-actions, .cv-jump-nav, .skip-link, .publication-filters { display: none !important; }
   .page-hero { padding: 0 0 1.2rem; border-bottom: 2px solid black; background: white; }
   .page-hero h1 { font-size: 24pt; }
   .cv-content { padding: 1.5rem 0 0; }

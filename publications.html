@@ -4,6 +4,7 @@ title: Publications
 permalink: /publications/
 description: "Peer-reviewed publications by Yuyeol Choi."
 ---
+{% assign publications_by_year = site.data.publications | group_by: "year" %}
 <section class="page-hero">
   <div class="container narrow">
     <p class="eyebrow">Published work</p>
@@ -14,16 +15,47 @@ description: "Peer-reviewed publications by Yuyeol Choi."
 
 <section class="section">
   <div class="container narrow">
-    {% assign publications_by_year = site.data.publications | group_by: "year" %}
+    {% comment %}
+      Progressive enhancement: the filter form is hidden until assets/js/publications-filter.js
+      reveals it, so the full list is always visible without JavaScript.
+      Options are generated from _data/publications.yml and _data/research_themes.yml.
+    {% endcomment %}
+    <form class="publication-filters" id="publication-filters" hidden aria-label="Filter publications" onsubmit="return false;">
+      <div class="filter-field">
+        <label for="filter-year">Year</label>
+        <select id="filter-year">
+          <option value="">All years</option>
+          {% for year in publications_by_year %}
+            <option value="{{ year.name }}">{{ year.name }}</option>
+          {% endfor %}
+        </select>
+      </div>
+      <div class="filter-field">
+        <label for="filter-theme">Research theme</label>
+        <select id="filter-theme">
+          <option value="">All themes</option>
+          {% for theme in site.data.research_themes %}
+            <option value="{{ forloop.index }}">{{ theme.title }}</option>
+          {% endfor %}
+        </select>
+      </div>
+      <button class="button button-secondary filter-reset" type="reset">Clear</button>
+      <p class="filter-status" id="filter-status" role="status" aria-live="polite"></p>
+    </form>
+
     {% for year in publications_by_year %}
-      <section class="year-group" aria-labelledby="year-{{ year.name }}">
+      <section class="year-group" aria-labelledby="year-{{ year.name }}" data-year-group="{{ year.name }}">
         <h2 id="year-{{ year.name }}">{{ year.name }}</h2>
         <div class="publication-list">
           {% for publication in year.items %}
-            {% include publication.html item=publication show_contribution=true %}
+            {% include publication.html item=publication show_contribution=true filterable=true %}
           {% endfor %}
         </div>
       </section>
     {% endfor %}
+
+    <p class="empty-state" id="filter-empty" hidden>No publications match the current filters.</p>
   </div>
 </section>
+
+<script src="{{ '/assets/js/publications-filter.js' | relative_url }}" defer></script>
