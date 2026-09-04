@@ -1,6 +1,8 @@
 # Publication data drafted from the public Google Scholar profile:
 # https://scholar.google.com/citations?user=gExFOsIAAAAJ
 # Keep entries ordered newest first. Use empty strings when DOI or PDF links are unavailable.
+# TODO(owner): Fill in `doi` for each entry (currently all empty); the DOI link and
+# citation_doi meta tag render automatically once a value is present.
 - title: "Cinnamon sticks-derived N-doped activated carbons with tailored aperture environment for efficient adsorption and separation of C2H2/CO2 and C2H4/CO2"
   id: "2026-activated-carbons-gas-separation"
   authors:

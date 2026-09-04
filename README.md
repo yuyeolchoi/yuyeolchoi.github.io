@@ -2,19 +2,19 @@
 
 This repository is a publication-focused academic portfolio built for GitHub Pages with Jekyll. It is intentionally data-driven: update the YAML files and configuration rather than editing repeated publication or CV markup.
 
-> The included name, biography, CV, and publications are examples. Replace every placeholder before publishing.
+> Values marked `TODO(owner)` in `_config.yml` and `_data/` still need to be filled in by the site owner.
 
 ## 1. Add your information
 
 Edit `_config.yml`:
 
-- Replace `Your Name`, initials, role, institution, location, and public research email.
+- Check `author` (name, initials, role, institution, location, and public research email).
 - Rewrite `author.bio` in this order: research question, methods, established contribution.
 - Replace `research_interests` with topics demonstrated by published work.
-- Add only profile URLs that you actively use. Leave unused values as empty strings.
+- Under `social`, add only profiles you actively use. `scholar`, `researchgate`, `github`, and `linkedin` take full URLs; `orcid` takes the bare ORCID iD (for example `0000-0001-8903-3551`) and the templates build the `https://orcid.org/...` link. Leave unused values as empty strings and they are not rendered.
 - Replace `url` with `https://<username>.github.io`.
 
-Replace `assets/images/profile-placeholder.svg` with a professional image such as `assets/images/profile.jpg`, then update `author.profile_image`.
+`author.profile_image` is empty, so the home hero is text-only. To show a portrait, add for example `assets/images/profile.jpg` (4:5 ratio, about 800x1000px) and set `author.profile_image: "/assets/images/profile.jpg"`; the hero switches to the two-column layout automatically.
 
 ## 2. Add publications
 
@@ -35,25 +35,33 @@ Edit `_data/publications.yml`. Keep entries newest first and preserve this struc
   pdf_url: ""
   featured: true
   contribution: "Demonstrated one specific contribution supported by this paper."
+  id: "2026-short-slug"
 ```
 
-The name in `authors` must exactly match `author.name` in `_config.yml` for bold highlighting. Use empty strings for unavailable DOI, PDF, issue, or page values. Set `featured: true` for three to five papers shown on the home page.
+The name in `authors` must exactly match `author.name` in `_config.yml` for bold highlighting. Use empty strings for unavailable DOI, PDF, issue, or page values. Set `featured: true` for three to five papers shown on the home page. Give every entry a unique `id`; the research page uses these ids to link publications to themes.
+
+Every page that lists publications (Home, Publications, CV) renders from this one file through the shared `_includes/publication.html` include, so adding an entry here updates all three pages. The Publications page also emits Google Scholar `citation_*` meta tags from the same data.
+
+## 2b. Update research themes
+
+Edit `_data/research_themes.yml`. Each theme has a `title`, a one- or two-sentence `description`, and a `publication_ids` list referencing `id` values from `_data/publications.yml`. Keep descriptions within what the published work supports.
 
 ## 3. Update CV sections
 
 - Edit `_data/cv.yml` for education, completed research experience, funding, awards, presentations, teaching, service, skills, software or data resources, and memberships.
-- Edit `about.html` and replace every bracketed prompt.
-- To offer a PDF CV, add the file under `assets/files/` and set `author.cv_pdf` in `_config.yml`, for example `/assets/files/your-name-cv.pdf`.
+- Edit `about.html` to update the narrative profile text.
+- To offer a PDF CV, add the file under `assets/cv/` and set `author.cv_pdf` in `_config.yml`, for example `/assets/cv/yuyeol-choi-cv.pdf`. The download button is hidden while `author.cv_pdf` is empty.
 - Do not publish a phone number, birth date, home address, confidential work, or ongoing project details.
 
-The public navigation is:
+The public navigation (`_data/navigation.yml`) is:
 
-- `Home`: summarized profile, featured publication list, funding, awards, and experience.
-- `Publications`: full publication list.
-- `Funding`: grants, fellowships, scholarships, and travel grants.
-- `Honors & Awards`: awards and recognitions.
-- `Experience`: research experience, education, teaching, and service.
+- `Home`: summarized profile, featured publications, core expertise, and selected funding and experience.
+- `Publications`: full publication list grouped by year.
+- `Research`: research themes with linked publications.
 - `CV`: printable full CV-style page.
+- `About`: research background and profile links.
+
+`funding.html`, `awards.html`, and `experience.html` are kept as short pages that point to the matching CV section; they are not in the navigation.
 
 ## 4. Preview locally
 
