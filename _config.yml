@@ -18,7 +18,9 @@ author:
     I develop and analyze heterogeneous catalysts for C1 conversion and
     hydrogen production, combining experimental catalysis with DFT-based
     descriptor and mechanism analysis.
-  profile_image: "/assets/images/research-overview.svg"
+  # TODO(owner): Add a portrait (e.g. /assets/images/profile.jpg, 4:5 ratio, ~800x1000px)
+  # to show a photo in the home hero. Leave empty to keep the text-only hero.
+  profile_image: ""
   # TODO(owner): Upload a public CV PDF to assets/cv/ and set this path.
   cv_pdf: ""
 

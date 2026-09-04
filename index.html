@@ -6,12 +6,15 @@ description: "Academic profile, research interests, and selected publications."
 {% assign featured_publications = site.data.publications | where: "featured", true %}
 {% assign featured_funding = site.data.cv.funding | where: "featured", true %}
 {% assign featured_experience = site.data.cv.experience | where: "featured", true %}
+{% assign profile_image = site.author.profile_image | default: "" %}
 
 <section class="hero">
-  <div class="container hero-grid">
-    <div class="hero-image-wrap">
-      <img class="profile-image" src="{{ site.author.profile_image | relative_url }}" alt="Research overview workflow linking catalyst design, experiments, and DFT analysis for {{ site.author.name }}">
-    </div>
+  <div class="container hero-grid{% if profile_image == "" %} hero-grid-text{% endif %}">
+    {% if profile_image != "" %}
+      <div class="hero-image-wrap">
+        <img class="profile-image" src="{{ profile_image | relative_url }}" alt="Portrait of {{ site.author.name }}" width="800" height="1000">
+      </div>
+    {% endif %}
     <div class="hero-copy">
       <p class="eyebrow">{{ site.author.role }}</p>
       <h1>{{ site.author.name }}</h1>
