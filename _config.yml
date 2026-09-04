@@ -37,11 +37,11 @@ social:
   scholar: "https://scholar.google.com/citations?user=gExFOsIAAAAJ"
   # ORCID iD only; templates build the link as https://orcid.org/<id>.
   orcid: "0000-0001-8903-3551"
-  # TODO(owner): Add ResearchGate, GitHub, and LinkedIn URLs if used publicly.
+  # TODO(owner): Add a ResearchGate URL if used publicly.
   # Leave unused values as empty strings so they are not rendered.
   researchgate: ""
-  github: ""
-  linkedin: ""
+  github: "https://github.com/yuyeolchoi"
+  linkedin: "https://www.linkedin.com/in/yuyeol-choi-09b525223/"
 
 markdown: kramdown
 permalink: pretty
