@@ -74,6 +74,8 @@ skills:
       - "Density functional theory (DFT)"
       - "ORCA"
       - "Quantum ESPRESSO"
+      - "SIESTA"
+      - "xTB"
       - "Catalyst descriptor analysis"
   - category: "Mechanistic interpretation"
     items:
@@ -81,6 +83,12 @@ skills:
       - "Adsorption and activation trends"
       - "Metal-support interactions"
       - "Structure-performance relationships"
+  - category: "Research computing infrastructure"
+    items:
+      - "Linux server assembly and administration"
+      - "Slurm job scheduling"
+      - "environment-module software deployment"
+      - "secure remote access (Tailscale VPN)"
 
 software: []
 
