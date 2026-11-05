@@ -14,7 +14,7 @@ Edit `_config.yml`:
 - Under `social`, add only profiles you actively use. `scholar`, `researchgate`, `github`, and `linkedin` take full URLs; `orcid` takes the bare ORCID iD (for example `0000-0001-8903-3551`) and the templates build the `https://orcid.org/...` link. Leave unused values as empty strings and they are not rendered.
 - Replace `url` with `https://<username>.github.io`.
 
-`author.profile_image` is empty, so the home hero is text-only. To show a portrait, add for example `assets/images/profile.jpg` (4:5 ratio, about 800x1000px) and set `author.profile_image: "/assets/images/profile.jpg"`; the hero switches to the two-column layout automatically.
+`author.profile_image` is empty, so the home hero shows the name, the bio and the facts list. To show a portrait, add for example `assets/images/profile.jpg` (4:5 ratio, about 800x1000px) and set `author.profile_image: "/assets/images/profile.jpg"`; the portrait then appears above the facts list beside the hero text.
 
 ## 2. Add publications
 
@@ -112,3 +112,7 @@ git push
 ```
 
 Always pull before editing when switching computers. Commit source files only; do not commit `_site`, caches, or installed dependencies.
+
+## Design system
+
+The look was rebuilt with [Hallmark](https://github.com/nutlope/hallmark) (theme: Almanac). Every colour, font, size and spacing value is a token at the top of `assets/css/style.css`; the first comment lines there are the Hallmark stamp recording the shape, hero posture, waivers and copy changes. Fonts (Hanken Grotesk, Newsreader, IBM Plex Mono) load from Google Fonts in `_layouts/default.html`. Keep new styles on the tokens (`--color-*`, `--space-*`, `--text-*`) rather than literal values, and avoid small tracked-caps labels above headings.

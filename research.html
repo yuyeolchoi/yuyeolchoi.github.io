@@ -5,35 +5,38 @@ permalink: /research/
 description: "Research overview and detailed research stories by Yuyeol Choi."
 ---
 <section class="page-hero">
-  <div class="container narrow">
-    <p class="eyebrow">Research overview</p>
-    <h1>Research</h1>
-    <p>Research themes summarized from published work and publicly shareable academic records.</p>
+  <div class="container grid">
+    <div class="span-8">
+      <h1>Research</h1>
+      <p class="lead">Research themes summarized from published work and publicly shareable academic records.</p>
+    </div>
   </div>
 </section>
 
 <section class="section">
-  <div class="container narrow">
-    <div class="detail-list">
+  <div class="container">
+    <div class="theme-rows">
       {% for theme in site.data.research_themes %}
-        <article class="detail-card research-theme">
+        <article class="research-theme">
           <h2>{{ theme.title }}</h2>
-          <p>{{ theme.description }}</p>
-          <h3>Related publications</h3>
-          <ul class="related-publications">
-            {% for publication in site.data.publications %}
-              {% if theme.publication_ids contains publication.id %}
-                <li>
-                  {% if publication.paper_url != "" %}
-                    <a href="{{ publication.paper_url }}" target="_blank" rel="noopener">{{ publication.title }}</a>
-                  {% else %}
-                    <span>{{ publication.title }}</span>
-                  {% endif %}
-                  <span>{{ publication.venue }}, {{ publication.year }}</span>
-                </li>
-              {% endif %}
-            {% endfor %}
-          </ul>
+          <div>
+            <p>{{ theme.description }}</p>
+            <h3>Related publications</h3>
+            <ul class="related-publications">
+              {% for publication in site.data.publications %}
+                {% if theme.publication_ids contains publication.id %}
+                  <li>
+                    {% if publication.paper_url != "" %}
+                      <a href="{{ publication.paper_url }}" target="_blank" rel="noopener">{{ publication.title }}</a>
+                    {% else %}
+                      <span>{{ publication.title }}</span>
+                    {% endif %}
+                    <span>{{ publication.venue }}, {{ publication.year }}</span>
+                  </li>
+                {% endif %}
+              {% endfor %}
+            </ul>
+          </div>
         </article>
       {% endfor %}
     </div>

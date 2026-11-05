@@ -6,15 +6,18 @@ description: "Peer-reviewed publications by Yuyeol Choi."
 ---
 {% assign publications_by_year = site.data.publications | group_by: "year" %}
 <section class="page-hero">
-  <div class="container narrow">
-    <p class="eyebrow">Published work</p>
-    <h1>Publications</h1>
-    <p>Peer-reviewed articles and published scholarly work, listed from newest to oldest.</p>
+  <div class="container grid">
+    <div class="span-8">
+      <h1>Publications</h1>
+      <p class="lead">Peer-reviewed articles and published scholarly work, listed from newest to oldest.</p>
+    </div>
   </div>
 </section>
 
 <section class="section">
-  <div class="container narrow">
+  <div class="container">
+    <div class="grid">
+    <div class="span-10">
     {% comment %}
       Progressive enhancement: the filter form is hidden until assets/js/publications-filter.js
       reveals it, so the full list is always visible without JavaScript.
@@ -55,6 +58,8 @@ description: "Peer-reviewed publications by Yuyeol Choi."
     {% endfor %}
 
     <p class="empty-state" id="filter-empty" hidden>No publications match the current filters.</p>
+    </div>
+    </div>
   </div>
 </section>
 

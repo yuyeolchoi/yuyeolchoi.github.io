@@ -1,11 +1,8 @@
 <header class="site-header">
   <div class="container header-inner">
     <a class="site-identity" href="{{ '/' | relative_url }}" aria-label="{{ site.author.name }} home">
-      <span class="identity-mark" aria-hidden="true">{{ site.author.initials }}</span>
-      <span>
-        <strong>{{ site.author.name }}</strong>
-        <small>{{ site.author.role }}</small>
-      </span>
+      <strong>{{ site.author.name }}</strong>
+      <small>{{ site.author.role }}</small>
     </a>
     <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation">
       <span class="sr-only">Toggle navigation</span>
@@ -24,4 +21,3 @@
     </nav>
   </div>
 </header>
-
