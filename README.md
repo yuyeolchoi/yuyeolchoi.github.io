@@ -116,3 +116,5 @@ Always pull before editing when switching computers. Commit source files only; d
 ## Design system
 
 The look was rebuilt with [Hallmark](https://github.com/nutlope/hallmark) (theme: Almanac). Every colour, font, size and spacing value is a token at the top of `assets/css/style.css`; the first comment lines there are the Hallmark stamp recording the shape, hero posture, waivers and copy changes. Fonts (Hanken Grotesk, Newsreader, IBM Plex Mono) load from Google Fonts in `_layouts/default.html`. Keep new styles on the tokens (`--color-*`, `--space-*`, `--text-*`) rather than literal values, and avoid small tracked-caps labels above headings.
+
+Before and after screenshots of the redesign are in `docs/design-preview/` (excluded from the built site).
