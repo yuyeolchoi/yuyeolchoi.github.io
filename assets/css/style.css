@@ -7,16 +7,17 @@
 /* Hallmark · reworded "Chonnam National University - Gwangju, South Korea" to two rows of the facts list · 63 names the hyphen-joined meta string */
 /* Hallmark · moved "Full CV includes publications, research experience, funding, education, teaching, and technical skills." from the hero to the closing band · 58 names the hero's third text block */
 /* Hallmark · kept: three summary-card headings ("Doctoral Student Research Fellowship", "Visiting Graduate Student", "International Research Collaborator") became rows of the record table on the home page; every link, id, field, handler and script kept */
+/* Hallmark · colourway: green, by request · the slate moved to a moss paper at hue 150, the ink to a forest green, the magenta signal to a deep green at hue 152; the greys stay tinted toward the anchor */
 /* Hallmark · built: the project · redesign: full */
 
 :root {
-  --color-paper: oklch(84% 0.012 245); --color-paper-2: oklch(81% 0.012 245); --color-paper-3: oklch(77% 0.012 245);
-  --color-ink: oklch(16% 0.020 245); --color-ink-2: oklch(24% 0.018 245); --color-muted: oklch(38% 0.016 245);
-  --color-rule: oklch(73% 0.013 240); --color-rule-2: oklch(32% 0.018 240);
-  --color-accent: oklch(45% 0.180 350); --color-accent-2: oklch(37% 0.160 350); --color-accent-ink: oklch(97% 0.006 245); --color-focus: oklch(46% 0.190 350);
-  --color-sheet: oklch(93.5% 0.008 245);
-  --color-sheet-2: oklch(90% 0.009 245);
-  --color-ink-rule: oklch(34% 0.020 245);
+  --color-paper: oklch(86% 0.022 150); --color-paper-2: oklch(83% 0.024 150); --color-paper-3: oklch(79% 0.026 150);
+  --color-ink: oklch(17% 0.030 160); --color-ink-2: oklch(25% 0.028 160); --color-muted: oklch(39% 0.030 158);
+  --color-rule: oklch(74% 0.026 150); --color-rule-2: oklch(33% 0.032 158);
+  --color-accent: oklch(42% 0.140 152); --color-accent-2: oklch(35% 0.120 152); --color-accent-ink: oklch(97% 0.012 150); --color-focus: oklch(44% 0.160 152);
+  --color-sheet: oklch(94.5% 0.012 150);
+  --color-sheet-2: oklch(91% 0.014 150);
+  --color-ink-rule: oklch(35% 0.032 160);
   --color-notice: oklch(88% 0.040 85); --color-notice-ink: oklch(30% 0.060 70); --color-notice-rule: oklch(58% 0.120 70);
   --font-display: "Hanken Grotesk", ui-sans-serif, system-ui, sans-serif;
   --font-body: "Newsreader", ui-serif, Georgia, serif;
