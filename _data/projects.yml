@@ -1,0 +1,70 @@
+# Projects rendered on /projects/. Keep every statement verifiable: a thing that
+# exists, a repository that is public, a tool in real use.
+#
+# Fields:
+#   id          unique slug, used as the row's anchor (#id)
+#   title       the project's name
+#   type        one short noun: infrastructure, desktop tool, workflow
+#   stack       tools or languages involved, as a short list; leave [] if none
+#   status      one short phrase: in daily use, released, in progress
+#   source      public repository URL, or "" for none
+#   summary     one sentence, shown first
+#   body        two or three short paragraphs, as a list of strings
+#   image       path under /assets/images/projects/, or "" for no photograph
+#   image_alt   what the photograph shows (required when image is set)
+#   caption     one fact under the photograph (what, where, when)
+
+- id: "compute-server"
+  title: "Research compute server: build and ongoing operation"
+  type: "Infrastructure"
+  stack:
+    - "Linux"
+    - "Slurm"
+    - "Environment modules"
+    - "Tailscale"
+  status: "In daily use"
+  source: ""
+  summary: "A Linux compute server assembled from second-hand computers and workstation parts, which runs my DFT production calculations."
+  body:
+    - "I assembled the machine myself from used computers and workstation-class components, installed the operating system, and set up Slurm job scheduling with an environment-module software stack so that ORCA, Quantum ESPRESSO, SIESTA and xTB can be loaded per job. Secure remote access runs over Tailscale."
+    - "The server is not a one-off build: I keep it running and adjust it as the calculations demand, which is where most of the practical knowledge of running research computing on a small budget has come from."
+  # TODO(owner): add a sentence on a concrete modification made during operation
+  # (a GPU swap, a queue setting, a storage change) once confirmed.
+  # TODO(owner): add a photograph of the actual machine, e.g.
+  # assets/images/projects/compute-server.jpg (JPG, about 1600px wide, under 500 KB),
+  # then fill image, image_alt and caption. Leave image "" until then.
+  image: ""
+  image_alt: ""
+  caption: ""
+
+- id: "spa2csv"
+  title: "SPA to CSV converter"
+  type: "Desktop tool"
+  stack:
+    - "Python"
+    - "tkinter"
+    - "PyInstaller"
+    - "pytest"
+  status: "Released, MIT licence"
+  source: "https://github.com/yuyeolchoi/spa2csv_gui"
+  summary: "A desktop tool that batch-converts Thermo OMNIC .spa FT-IR spectra to CSV without OMNIC installed."
+  body:
+    - "I wrote it because exporting in-situ DRIFT IR series through OMNIC meant saving every spectrum by hand. The tool loads a whole folder, including the extension-less files OMNIC writes when it splits an .srs series, and converts them on a thread pool, so a full operando run is exported in one step."
+    - "The CSV output matches OMNIC's own export exactly: it was validated point by point against a Nicolet iS50 export, so existing analysis scripts need no change. It ships as a Windows executable with an English and Korean interface and a pytest suite."
+  image: ""
+  image_alt: ""
+  caption: ""
+
+# TODO(owner): Orange3 analysis workflows. Add an entry here once it is settled
+# what the workflows automate and which experiments they serve:
+# - id: "orange3-workflows"
+#   title: "Orange3 analysis workflows"
+#   type: "Workflow"
+#   stack: ["Orange3"]
+#   status: ""
+#   source: ""
+#   summary: ""
+#   body: []
+#   image: ""
+#   image_alt: ""
+#   caption: ""

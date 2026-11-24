@@ -46,6 +46,10 @@ Every page that lists publications (Home, Publications, CV) renders from this on
 
 Edit `_data/research_themes.yml`. Each theme has a `title`, a one- or two-sentence `description`, and a `publication_ids` list referencing `id` values from `_data/publications.yml`. Keep descriptions within what the published work supports.
 
+## 2c. Update projects
+
+Edit `_data/projects.yml`. Each entry has an `id`, `title`, `type`, `stack`, `status`, `source` (a public repository URL or `""`), a one-sentence `summary`, `body` paragraphs, and an optional photograph (`image`, `image_alt`, `caption`). Only state what exists and is in use; leave `image` empty until a real photograph is available, and the page shows no empty frame. The Projects page renders every entry; the CV's "Software, data, and protocols" section in `_data/cv.yml` is the place for the one-line record of the same tools.
+
 ## 3. Update CV sections
 
 - Edit `_data/cv.yml` for education, completed research experience, funding, awards, presentations, teaching, service, skills, software or data resources, and memberships.

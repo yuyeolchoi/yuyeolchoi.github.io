@@ -1,0 +1,48 @@
+---
+layout: default
+title: Projects
+permalink: /projects/
+description: "Research infrastructure and tools built by Yuyeol Choi."
+---
+<section class="page-hero">
+  <div class="container grid">
+    <div class="span-8">
+      <h1>Projects</h1>
+      <p class="lead">Infrastructure and tools I built for my own research and keep in use: a compute server assembled by hand and the software that moves data out of the instruments.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="project-rows">
+      {% for project in site.data.projects %}
+        {% assign source = project.source | default: "" %}
+        {% assign image = project.image | default: "" %}
+        <article class="project" id="{{ project.id }}">
+          <div class="project-head">
+            <h2>{{ project.title }}</h2>
+            <dl class="facts project-facts">
+              <div><dt>Type</dt><dd>{{ project.type }}</dd></div>
+              {% if project.stack.size > 0 %}<div><dt>Stack</dt><dd>{{ project.stack | join: ", " }}</dd></div>{% endif %}
+              {% if project.status != "" %}<div><dt>Status</dt><dd>{{ project.status }}</dd></div>{% endif %}
+              {% if source != "" %}<div><dt>Source</dt><dd><a href="{{ source }}" target="_blank" rel="noopener">{{ source | remove: "https://" }}</a></dd></div>{% endif %}
+            </dl>
+          </div>
+          <div class="project-body">
+            <p class="lead">{{ project.summary }}</p>
+            {% for paragraph in project.body %}
+              <p>{{ paragraph }}</p>
+            {% endfor %}
+            {% if image != "" %}
+              <figure class="project-figure">
+                <img src="{{ image | relative_url }}" alt="{{ project.image_alt }}" loading="lazy" width="1600" height="1200">
+                {% if project.caption != "" %}<figcaption>{{ project.caption }}</figcaption>{% endif %}
+              </figure>
+            {% endif %}
+          </div>
+        </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>

@@ -231,6 +231,21 @@ small, .meta, figcaption, th, label { font-size: var(--text-md); font-weight: 50
   .research-theme { grid-template-columns: 5fr 7fr; }
 }
 
+/* Projects as rows: the head and facts on the left, the account on the right */
+.project-rows { border-top: var(--rule-hair) solid var(--color-ink); }
+.project { display: grid; grid-template-columns: minmax(0, 1fr); gap: var(--space-lg) var(--gap-columns); padding-block: var(--space-xl); border-bottom: var(--rule-hair) solid var(--color-rule); scroll-margin-top: var(--space-3xl); }
+.project h2 { font-size: var(--text-xl); max-width: 24ch; margin-bottom: var(--space-lg); }
+.project-facts { border-top-color: var(--color-rule-2); }
+.project-facts dd a { overflow-wrap: anywhere; }
+.project-body .lead { color: var(--color-ink); margin-bottom: var(--space-md); }
+.project-body p + p { margin-top: var(--space-md); }
+.project-figure { margin: var(--space-xl) 0 0; }
+.project-figure img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; outline: var(--rule-hair) solid var(--color-rule-2); outline-offset: -1px; }
+.project-figure figcaption { margin-top: var(--space-xs); color: var(--color-muted); }
+@media (min-width: 60rem) {
+  .project { grid-template-columns: 5fr 7fr; }
+}
+
 /* Prose */
 .prose { max-width: 65ch; }
 .prose > p { margin-bottom: var(--space-lg); line-height: 1.65; }

@@ -90,6 +90,9 @@ skills:
       - "environment-module software deployment"
       - "secure remote access (Tailscale VPN)"
 
-software: []
+software:
+  - title: "SPA to CSV converter (spa2csv_gui)"
+    description: "Python desktop tool that batch-converts Thermo OMNIC .spa FT-IR spectra to CSV; output validated against OMNIC's own export. MIT licence."
+    url: "https://github.com/yuyeolchoi/spa2csv_gui"
 
 memberships: []
