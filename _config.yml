@@ -52,6 +52,10 @@ plugins:
 
 exclude:
   - docs
+  - scripts
+  - package.json
+  - package-lock.json
+  - node_modules
   - Gemfile
   - Gemfile.lock
   - README.md
