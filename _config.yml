@@ -21,8 +21,8 @@ author:
   # TODO(owner): Add a portrait (e.g. /assets/images/profile.jpg, 4:5 ratio, ~800x1000px)
   # to show a photo in the home hero. Leave empty to keep the text-only hero.
   profile_image: ""
-  # TODO(owner): Upload a public CV PDF to assets/cv/ and set this path.
-  cv_pdf: ""
+  # Generated on every deploy by .github/workflows/pages.yml (scripts/render-cv-pdf.mjs).
+  cv_pdf: "/assets/cv/yuyeol-choi-cv.pdf"
 
 research_interests:
   - "Heterogeneous catalysis for C1 chemistry"
@@ -52,6 +52,10 @@ plugins:
 
 exclude:
   - docs
+  - scripts
+  - package.json
+  - package-lock.json
+  - node_modules
   - Gemfile
   - Gemfile.lock
   - README.md

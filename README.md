@@ -117,6 +117,10 @@ git push
 
 Always pull before editing when switching computers. Commit source files only; do not commit `_site`, caches, or installed dependencies.
 
+## CV PDF
+
+`.github/workflows/pages.yml` builds the site on every push to `main`, renders `/cv/` to `assets/cv/yuyeol-choi-cv.pdf` with `scripts/render-cv-pdf.mjs` (Playwright, A4, the print stylesheet, a dated footer), and deploys the result to GitHub Pages. `author.cv_pdf` in `_config.yml` points at that file, which puts the "Download PDF CV" button on the CV page. The workflow only deploys when the repository's Pages source is set to **GitHub Actions** (Settings, Pages, Build and deployment). To render the PDF locally: build the site, `npm install playwright`, `npx playwright install chromium`, then `node scripts/render-cv-pdf.mjs _site out.pdf`.
+
 ## Design system
 
 The look was rebuilt with [Hallmark](https://github.com/nutlope/hallmark) (theme: Almanac, in a green colourway). Every colour, font, size and spacing value is a token at the top of `assets/css/style.css`; the first comment lines there are the Hallmark stamp recording the shape, hero posture, waivers and copy changes. Fonts (Hanken Grotesk, Newsreader, IBM Plex Mono) load from Google Fonts in `_layouts/default.html`. Keep new styles on the tokens (`--color-*`, `--space-*`, `--text-*`) rather than literal values, and avoid small tracked-caps labels above headings.

@@ -5,3 +5,4 @@ _site/
 vendor/
 jekyll-server.log
 jekyll-server.err.log
+node_modules

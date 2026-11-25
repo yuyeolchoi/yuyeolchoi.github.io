@@ -10,6 +10,18 @@ body_class: cv-page
     <div class="span-7">
       <h1>{{ site.author.name }}</h1>
       <p class="lead">{{ site.author.role }}, {{ site.author.affiliation }}</p>
+      {% assign orcid = site.social.orcid | default: "" %}
+      {% assign scholar = site.social.scholar | default: "" %}
+      {% assign github = site.social.github | default: "" %}
+      {% assign linkedin = site.social.linkedin | default: "" %}
+      <dl class="facts cv-facts">
+        {% if site.author.email != "" %}<div><dt>Email</dt><dd><a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></dd></div>{% endif %}
+        {% if site.author.location != "" %}<div><dt>Location</dt><dd>{{ site.author.location }}</dd></div>{% endif %}
+        {% unless orcid == "" or orcid contains "TODO" %}<div><dt>ORCID</dt><dd><a href="https://orcid.org/{{ orcid | remove: 'https://orcid.org/' }}" rel="me">{{ orcid | remove: "https://orcid.org/" }}</a></dd></div>{% endunless %}
+        {% unless scholar == "" or scholar contains "TODO" %}<div><dt>Google Scholar</dt><dd><a href="{{ scholar }}">{{ scholar | remove: "https://" }}</a></dd></div>{% endunless %}
+        {% unless github == "" or github contains "TODO" %}<div><dt>GitHub</dt><dd><a href="{{ github }}" rel="me">{{ github | remove: "https://" }}</a></dd></div>{% endunless %}
+        {% unless linkedin == "" or linkedin contains "TODO" %}<div><dt>LinkedIn</dt><dd><a href="{{ linkedin }}" rel="me">{{ linkedin | remove: "https://" | remove: "www." }}</a></dd></div>{% endunless %}
+      </dl>
     </div>
     <div class="actions cv-actions span-4 start-8">
       {% if site.author.cv_pdf != "" %}
