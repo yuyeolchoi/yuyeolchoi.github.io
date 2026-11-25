@@ -92,7 +92,7 @@ skills:
 
 software:
   - title: "SPA to CSV converter (spa2csv_gui)"
-    description: "Python desktop tool that batch-converts Thermo OMNIC .spa FT-IR spectra to CSV; output validated against OMNIC's own export. MIT licence."
+    description: "Python desktop tool that batch-converts Thermo OMNIC .spa FT-IR spectra to CSV; output validated against OMNIC's own export. Built with Claude Code to my specification; validated against instrument data. MIT licence."
     url: "https://github.com/yuyeolchoi/spa2csv_gui"
 
 memberships: []
