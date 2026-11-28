@@ -30,12 +30,9 @@
     - "The server is not a one-off build: I keep it running and adjust it as the calculations demand, which is where most of the practical knowledge of running research computing on a small budget has come from."
   # TODO(owner): add a sentence on a concrete modification made during operation
   # (a GPU swap, a queue setting, a storage change) once confirmed.
-  # TODO(owner): add a photograph of the actual machine, e.g.
-  # assets/images/projects/compute-server.jpg (JPG, about 1600px wide, under 500 KB),
-  # then fill image, image_alt and caption. Leave image "" until then.
-  image: ""
-  image_alt: ""
-  caption: ""
+  image: "/assets/images/projects/compute-server.jpg"
+  image_alt: "A machine under repair with its parts out: a two-fan liquid-cooler radiator in front, the graphics card and power supply behind it, resting on a second workstation server."
+  caption: "2026, mid-repair after a hardware failure: the radiator, graphics card and power supply out on the bench. The workstation server underneath kept running."
 
 - id: "spa2csv"
   title: "SPA to CSV converter"

@@ -19,7 +19,7 @@ description: "Research infrastructure and tools built by Yuyeol Choi."
       {% for project in site.data.projects %}
         {% assign source = project.source | default: "" %}
         {% assign image = project.image | default: "" %}
-        <article class="project" id="{{ project.id }}">
+        <article class="project{% if image != "" %} has-image{% endif %}" id="{{ project.id }}">
           <div class="project-head">
             <h2>{{ project.title }}</h2>
             <dl class="facts project-facts">
@@ -41,13 +41,13 @@ description: "Research infrastructure and tools built by Yuyeol Choi."
                 {% if project.diagram_caption and project.diagram_caption != "" %}<figcaption>{{ project.diagram_caption }}</figcaption>{% endif %}
               </figure>
             {% endif %}
-            {% if image != "" %}
-              <figure class="project-figure">
-                <img src="{{ image | relative_url }}" alt="{{ project.image_alt }}" loading="lazy" width="1600" height="1200">
-                {% if project.caption != "" %}<figcaption>{{ project.caption }}</figcaption>{% endif %}
-              </figure>
-            {% endif %}
           </div>
+          {% if image != "" %}
+            <figure class="project-figure">
+              <img src="{{ image | relative_url }}" alt="{{ project.image_alt }}" loading="lazy" width="720" height="720">
+              {% if project.caption != "" %}<figcaption>{{ project.caption }}</figcaption>{% endif %}
+            </figure>
+          {% endif %}
         </article>
       {% endfor %}
     </div>

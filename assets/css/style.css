@@ -242,11 +242,16 @@ small, .meta, figcaption, th, label { font-size: var(--text-md); font-weight: 50
 .project-facts dd a { overflow-wrap: anywhere; }
 .project-body .lead { color: var(--color-ink); margin-bottom: var(--space-md); }
 .project-body p + p { margin-top: var(--space-md); }
-.project-figure { margin: var(--space-xl) 0 0; }
-.project-figure img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; outline: var(--rule-hair) solid var(--color-rule-2); outline-offset: -1px; }
+.project-figure { margin: 0; }
+.project-body .project-figure { margin-top: var(--space-xl); }
+.project-figure img { width: 100%; aspect-ratio: 1 / 1; object-fit: cover; outline: var(--rule-hair) solid var(--color-rule-2); outline-offset: -1px; filter: saturate(0.85); }
 .project-figure figcaption { margin-top: var(--space-xs); color: var(--color-muted); }
 @media (min-width: 60rem) {
   .project { grid-template-columns: 5fr 7fr; }
+  .project.has-image { grid-template-columns: 4fr 4fr 4fr; }
+}
+@media (min-width: 40rem) and (max-width: 60rem) {
+  .project-figure img { max-width: 24rem; }
 }
 
 /* Flow diagrams drawn in the theme's material: hairlines, boxes and type */
