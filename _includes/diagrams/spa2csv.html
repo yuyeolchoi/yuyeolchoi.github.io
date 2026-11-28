@@ -1,0 +1,20 @@
+{% comment %}
+  Before/after workflow for the SPA to CSV converter, as plain HTML so it reflows
+  on a phone. Each row is an ordered list of steps; the CSS draws the arrows.
+{% endcomment %}
+<div class="flow-diagram">
+  <p class="flow-title">Before, in OMNIC: one spectrum at a time</p>
+  <ol class="flow">
+    <li>Open one spectrum</li>
+    <li>Export as CSV</li>
+    <li>Name it and save</li>
+    <li class="flow-plain">1 CSV</li>
+  </ol>
+  <p class="flow-note">Repeated by hand for every spectrum in the series.</p>
+  <p class="flow-title">After, in spa2csv: one pass</p>
+  <ol class="flow">
+    <li>Load Folder</li>
+    <li>Start</li>
+    <li class="flow-result">Every spectrum as CSV, beside its source</li>
+  </ol>
+</div>

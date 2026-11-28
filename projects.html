@@ -34,6 +34,13 @@ description: "Research infrastructure and tools built by Yuyeol Choi."
             {% for paragraph in project.body %}
               <p>{{ paragraph }}</p>
             {% endfor %}
+            {% assign diagram = project.diagram | default: "" %}
+            {% if diagram != "" %}
+              <figure class="project-figure project-diagram">
+                {% include {{ diagram }} %}
+                {% if project.diagram_caption and project.diagram_caption != "" %}<figcaption>{{ project.diagram_caption }}</figcaption>{% endif %}
+              </figure>
+            {% endif %}
             {% if image != "" %}
               <figure class="project-figure">
                 <img src="{{ image | relative_url }}" alt="{{ project.image_alt }}" loading="lazy" width="1600" height="1200">

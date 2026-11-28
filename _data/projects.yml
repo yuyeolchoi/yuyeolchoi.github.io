@@ -49,6 +49,8 @@
   status: "Released, MIT licence"
   source: "https://github.com/yuyeolchoi/spa2csv_gui"
   summary: "A desktop tool that batch-converts Thermo OMNIC .spa FT-IR spectra to CSV without OMNIC installed."
+  diagram: "diagrams/spa2csv.html"
+  diagram_caption: "The manual export in OMNIC against the converter's single pass."
   body:
     - "I wrote it because exporting in-situ DRIFT IR series through OMNIC meant saving every spectrum by hand. The tool loads a whole folder, including the extension-less files OMNIC writes when it splits an .srs series, and converts them on a thread pool, so a full operando run is exported in one step."
     - "The CSV output matches OMNIC's own export exactly: it was validated point by point against a Nicolet iS50 export, so existing analysis scripts need no change. It ships as a Windows executable with an English and Korean interface and a pytest suite."
